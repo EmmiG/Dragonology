@@ -1,6 +1,6 @@
 /* 
 * Light dragon =
 * Color: White
-* Month Number: 2
-* Zodiac sign: Aquarius
+* Month Number: 9
+* Zodiac sign: Virgo
 */
