@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './sass/style.scss';
 import Admin from "./components/routes/Admin";
+import DropdownMenu from "./components/DropdownMenu";
+
+
 
 
 class App extends Component {
@@ -11,6 +13,8 @@ class App extends Component {
         
         
         <Admin />
+        
+        <DropdownMenu />
         
         <p className="TEST"> lorem imsum </p>
       </div>
