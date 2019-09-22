@@ -8,20 +8,36 @@ import MainMenu from "./components/MainMenu";
 
 class App extends Component {
   render() {
-    return (
+/* klassen Homepage ska till Homepage.js komponenten senare */
+      return (
       <div className="App">
-        
         
         <Admin />
         
-        
-         <MainMenu />
-        
         <p className="TEST"> lorem imsum </p>
         
-      </div>
+      
+        <div className="homepage">
         
-    
+            <div className="container_header">
+            </div>
+
+           <div className="container_menu">
+                <MainMenu />
+            </div>
+
+            <div className="container_stats">
+            </div>
+
+            <div className="container_facts">
+            </div>
+
+            <div className="container_footer">
+            </div>
+        
+        </div>
+        
+    </div>
     );
   }
 }

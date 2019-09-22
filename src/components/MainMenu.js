@@ -35,8 +35,14 @@ class MainMenu extends Component {
  
   }
 
+//const showMain = this.state.allMenus.
   
   render() {
+      
+    let overMenu = this.state.allMenus.map((under) => {
+        return (<div key={under.id}><img src={under.picUrl} alt="dropdownmenu_main" /> {under.isSubmenu}</div>)
+    });  
+      
       
     let menu = this.state.allMenus.map((item) => {
         return (<div key={item.id}><img src={item.picUrl} alt="dropdownmenu_main_and_under"/> - {item.linkUrl} - {item.isSubmenu}</div>)
@@ -47,7 +53,10 @@ class MainMenu extends Component {
         
 
     return (
+    <div> 
+    <div>{overMenu}</div>
      <div>{menu}</div>
+    </div>
     );
   }
 }
