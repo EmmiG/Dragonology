@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './sass/style.scss';
 import Admin from "./components/routes/Admin";
-import MainMenu from "./components/MainMenu";
+import Test from "./components/Test";
 
 
 
@@ -23,7 +23,7 @@ class App extends Component {
             </div>
 
            <div className="container_menu">
-                <MainMenu />
+                <Test />
             </div>
 
             <div className="container_stats">
