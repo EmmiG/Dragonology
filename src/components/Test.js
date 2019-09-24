@@ -4,12 +4,19 @@ import "../App.scss";
 class Test extends Component {
   constructor(props) {
     super(props);
-
+    
       
     this.state = {
-      allMenus: []
+      allMenus: [],
+      picUrl: '../images/Buttons/main_menu_dragons.png;'
     };
   }
+      
+ handleDragonMenuClick = DisplaySubMenu => () => {
+    this.setState({
+      picUrl: DisplaySubMenu
+    });
+  };
 
   fetchAllMenus = () => {
     fetch("http://localhost/dragonology/server/fetchMenu.php")
@@ -43,20 +50,23 @@ renderMainMenu = () =>
         </div>
       ));
 
-  renderSubmenu = () =>
+   renderSubmenu = () =>
     this.state.allMenus
       .filter(menu => menu.parentId === 2)
       .map(menu => (
         <div key={menu.id}>
-          <a href={menu.linkUrl}></a>
-      <img src={menu.picUrl} alt={menu.picName} />
+          <a href={menu.linkUrl}>
+            <img src={menu.picUrl} alt={menu.picName} />
+          </a>
         </div>
       ));
 
   render() {
     return (
       <div className="Menu">
+        
         <div>{this.renderMainMenu()}</div>
+<button onClick={this.handleDragonMenuClick('renderMenus :')}>text</button>
         <div id="sub_2">{this.renderMenus()}</div>
       </div>
     );
@@ -64,3 +74,4 @@ renderMainMenu = () =>
 }
 
 export default Test;
+
