@@ -65,8 +65,8 @@ renderMainMenu = () =>
     return (
       <div className="Menu">
         
-        <div>{this.renderMainMenu()}</div>
-<button onClick={this.handleDragonMenuClick('renderMenus :')}>text</button>
+        
+<button onClick={this.handleDragonMenuClick('renderMenus :')}><div>{this.renderMainMenu()}</div></button>
         <div id="sub_2">{this.renderMenus()}</div>
       </div>
     );
