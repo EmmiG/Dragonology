@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './sass/style.scss';
 import SelectBox from './features/select-box';
-import Admin from "./components/routes/Admin";
-import Test from "./components/Test";
+
 
 
 
@@ -19,22 +18,39 @@ class App extends Component {
        
           
           <div>
+          
           <h1>test2</h1>
+          
             <div>
+          
+          
                 <SelectBox
+          
                    items={[
-          { value: 'Home', id: 1 },
-          { value: 'Dragons', id: 2 }, 
-          { value: 'Dragon Test', id: 3 },
-          { value: 'Fortune Cookie', id: 4 },
+          
+          
+          { value: 'Dragons', id: 0 },
+          { value: 'Water dragon', id: 1 },
+          { value: 'Wood dragon', id: 2 }, 
+          { value: 'Brass dragon', id: 3 },
+          { value: 'Fire dragon', id: 4 },
+          { value: 'Forest dragon', id: 5 },
+          { value: 'Lightning dragon', id: 6 }, 
+          { value: 'Ice dragon', id: 7 },
+          { value: 'Earth dragon', id: 8 },
+          { value: 'Light dragon', id: 9 },
+          { value: 'Bronze dragon', id: 10 }, 
+          { value: 'Dark dragon', id: 11 },
+          { value: 'Metal dragon', id: 12 },
+          { value: 'test dragon', id: 13 },
           ]} 
+          
           />
             </div>
           </div>  
           
-           <Admin />
           
-        <p className="TEST"> lorem imsum </p>
+        <p className="TEST">  </p>
         
       
         <div className="homepage">
@@ -43,7 +59,7 @@ class App extends Component {
             </div>
 
            <div className="container_menu">
-                <Test />
+                
             </div>
 
             <div className="container_stats">

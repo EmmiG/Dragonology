@@ -4,6 +4,11 @@
 }
 
 
+.valueContainer {
+    float: left;
+    
+}
+
 #Home{
     height: 300px;
     width: 300px;
@@ -14,12 +19,96 @@
 }
 
 
+.select-box--home img{
+    
+    height: 100px;
+    width: 170px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.select-box--dragons img{
+    
+    height: 100px;
+    width: 170px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.select-box--test img{
+    
+    height: 100px;
+    width: 170px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.select-box--cookie img{
+    
+    height: 100px;
+    width: 170px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+
+
 .select-box--box {
     width: 180px;
     position: absolute;
     left: 0;
-    
 }
+
+.select-box--home {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 4px 12px;
+    vertical-align: middle;    
+}
+
+.select-box--dragons {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 4px 12px;
+    vertical-align: middle;    
+}
+
+.select-box--test {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 4px 12px;
+    vertical-align: middle;    
+}
+
+.select-box--cookie {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 4px 12px;
+    vertical-align: middle;    
+}
+
 .select-box--container {
     height: 30px;
     border: 1px solid #aaa;
@@ -38,6 +127,7 @@
 }
 
 .select-box--items div {
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
@@ -55,7 +145,7 @@
     background: #AF7;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 225px;
 }
 
 .select-box--arrow-down {
