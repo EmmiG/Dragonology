@@ -7,6 +7,7 @@ import SelectBox from './features/select-box';
 
 
 
+
 class App extends Component {
   render() {
 /* klassen Homepage ska till Homepage.js komponenten senare */
@@ -22,7 +23,7 @@ class App extends Component {
           <h1>test2</h1>
           
             <div>
-          
+           
           
                 <SelectBox
           
@@ -63,6 +64,8 @@ class App extends Component {
             </div>
 
             <div className="container_stats">
+          
+         
             </div>
 
             <div className="container_facts">
@@ -82,4 +85,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default App;

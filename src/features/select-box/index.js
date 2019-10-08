@@ -37,6 +37,19 @@ renderMenus = () =>
         </div>
       ));
 
+renderSubmenu = () =>
+    this.state.allMenus
+      .filter(menu => menu.parentId == 2)
+      .map(menu => (
+        <div key={menu.id} className="submenu">
+          <a href={menu.linkUrl}>
+            <img src={menu.picUrl} alt={menu.picName} />
+          </a>
+        </div>
+      ));
+
+
+
 renderHome = () =>
 this.state.allMenus
     .filter(menu => menu.id == 1)
@@ -129,6 +142,10 @@ render () {
              { this.renderTest() }  
           
            { this.renderCookie() }  
+
+       { this.renderSubmenu() } 
+
+
         
             </div>
 </div>
