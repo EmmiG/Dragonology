@@ -121,15 +121,16 @@ render () {
         style={{display: this.state.showItems ? 'block' : 'none'}}
         className="select-box--items"
         >
-             
+             { this.renderSubmenu() }
             {
-            
+           
             this.state.items.map(item => <div key={ item.id }
-            onClick={() => this.selectItem(item)}
-            className={this.state.selectedItem === item ? 'selected' : ''}
+            onClick={() => this.selectItem(item) }
+            className={this.state.selectedItem === item  ? 'selected' : ''}
 >               
                 
                 { item.value }
+
                
                 
                   
@@ -143,7 +144,7 @@ render () {
           
            { this.renderCookie() }  
 
-       { this.renderSubmenu() } 
+    
 
 
         
