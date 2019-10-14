@@ -54,7 +54,11 @@ renderHome = () =>
 this.state.allMenus
     .filter(menu => menu.id == 1)
     .map(menu => (
-          <div className="select-box--home" key={menu.id}><img src={menu.picUrl} alt={menu.picName} /> </div>
+          <div className="select-box--home" key={menu.id}>
+            <a href={menu.linkUrl}>
+            <img src={menu.picUrl} alt={menu.picName} />
+            </a> 
+            </div>
     ));
 
 
@@ -62,21 +66,31 @@ renderDragons = () =>
 this.state.allMenus
     .filter(menu => menu.id == 2)
     .map(menu => (
-          <div className="select-box--dragons" key={menu.id}><img src={menu.picUrl} alt={menu.picName} /> </div>
+          <div className="select-box--dragons" key={menu.id}>
+            
+            <img src={menu.picUrl} alt={menu.picName} />
+             
+            </div>
     ));
 
 renderTest = () =>
 this.state.allMenus
     .filter(menu => menu.id == 3)
     .map(menu => (
-          <div className="select-box--test" key={menu.id}><img src={menu.picUrl} alt={menu.picName} /> </div>
+          <div className="select-box--test" key={menu.id}>
+            <a href={menu.linkUrl}>
+            <img src={menu.picUrl} alt={menu.picName} />
+            </a>  </div>
     ));
 
 renderCookie = () =>
 this.state.allMenus
     .filter(menu => menu.id == 4)
     .map(menu => (
-          <div className="select-box--cookie" key={menu.id}><img src={menu.picUrl} alt={menu.picName} /> </div>
+          <div className="select-box--cookie" key={menu.id}>
+            <a href={menu.linkUrl}>
+            <img src={menu.picUrl} alt={menu.picName} />
+            </a>  </div>
     ));
 
 
@@ -92,21 +106,31 @@ selectItem = (item) => this.setState({
 })
 
 render () {
-    return <div> 
+    
+    
+    return (<div> 
         
         
     <div className="select-box--box"> 
            
-          { this.renderHome() } 
-        { this.renderDragons() }
+         
    
      <div 
     className="select-box--container"
     >
-                
+          
+        
         <div 
             className="select-box--selected-item"
-            > { this.state.selectedItem.value }</div>
+            > { this.state.selectedItem.value }
+    { this.renderHome() }
+    { this.renderDragons() }
+    { this.renderTest() }  
+    { this.renderCookie() }
+     
+</div>
+    
+    
                 
         <div 
     className="select-box--arrow"
@@ -121,35 +145,45 @@ render () {
         style={{display: this.state.showItems ? 'block' : 'none'}}
         className="select-box--items"
         >
-             { this.renderSubmenu() }
+            
+            
             {
-           
+            
             this.state.items.map(item => <div key={ item.id }
             onClick={() => this.selectItem(item) }
             className={this.state.selectedItem === item  ? 'selected' : ''}
 >               
                 
-                { item.value }
+                
+ { this.renderSubmenu() }
+
+{ item.value }
 
                
                 
                   
     </div>)
         } 
+</div>
 
-        </div>
+
+        
+
+
+
     </div>
 
-             { this.renderTest() }  
-          
-           { this.renderCookie() }  
+             
+     
 
-    
 
 
         
             </div>
+
 </div>
+
+);
 }
 
 }

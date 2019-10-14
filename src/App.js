@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './sass/style.scss';
 import SelectBox from './features/select-box';
-
-
-
-
+import Water_dragon from './components/Dragons/Water_dragon';
 
 
 
@@ -21,36 +18,37 @@ class App extends Component {
       <div className="App">
         
           
-       
-          
-          <div>
-          
-          <h1>test2</h1>
           
             <div>
            
           
                 <SelectBox
-          
+        
                    items={[
           
           
-          { value: 'Dragons', id: 0 },
-          { value: 'Water', id: 0 },
+          
+          { value: '', id: 0 },
           
           ]} 
           
           />
             </div>
-          </div>  
+           
           
           
         <p className="TEST">  </p>
         
       
         <div className="homepage">
+          
+         
+          
+           
         
             <div className="container_header">
+          
+          
             </div>
 
            <div className="container_menu">
