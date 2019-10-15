@@ -1,6 +1,14 @@
 import React from 'react'
 import '../../sass/style.scss';
 
+
+class DragonPages {
+    id: 0;
+    picUrl: "";
+    
+}
+
+
 class SelectBox extends React.Component {
     
     constructor(props) {

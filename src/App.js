@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './sass/style.scss';
-import SelectBox from './features/select-box';
-import Water_dragon from './components/Dragons/Water_dragon';
-
+import SelectBox from './features/select-box/index';
+import WaterDragon from './components/Dragons/WaterDragon';
 
 
 class App extends Component {
@@ -20,6 +19,8 @@ class App extends Component {
           
           
             <div>
+          
+                <WaterDragon />
            
           
                 <SelectBox
@@ -31,6 +32,8 @@ class App extends Component {
           { value: '', id: 0 },
           
           ]} 
+          
+          
           
           />
             </div>
