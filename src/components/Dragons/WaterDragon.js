@@ -23,25 +23,88 @@ class DragonStats {
     Nesting: "";
     
 }
+
+class DragonFacts {
+    id: 0;
+    Traits: "";
+    Appearance: "";
+    Habitat: "";
+    Characteristics: "";
+}
+
+class DragonSkills {
+    id: 0;
+    Name: "";
+    Description: "";
+}
+
+class DragonGems {
+    id: 0;
+    Description: "";
+    Abilites: "";
+    Found: "";
+}
+
+class DragonMagic {
+    id: 0;
+    Name: "";
+    Description: "";
+}
+
+
     
 class WaterDragon extends Component {
     
  constructor(props) {
     super(props);
        this.state = {
-          allDragons: []
+           DragonStats: [],
+           DragonSkills: [],
+           DragonGems: [],
+           DragonMagic: [],
+            
       } 
      
         
      }  
     
    
- fetchAllDragons = () => {
+ fetchOneDragon = () => {
 	    fetch("http://localhost/dragonology/server/fetchWater.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
-	        this.setState({ allDragons: data });
+	        this.setState({ DragonStats: data });
+	        
+	      });
+	  }
+ 
+ fetchOneSkill = () => {
+	    fetch("http://localhost/dragonology/server/fetchSkills.php")
+	      .then(response => response.json())
+	      .then(data => {
+            console.log(data);
+	        this.setState({ DragonSkills: data });
+	        
+	      });
+	  }
+ 
+  fetchOneGem = () => {
+	    fetch("http://localhost/dragonology/server/fetchGem.php")
+	      .then(response => response.json())
+	      .then(data => {
+            console.log(data);
+	        this.setState({ DragonGems: data });
+	        
+	      });
+	  }
+  
+    fetchMagic = () => {
+	    fetch("http://localhost/dragonology/server/fetchMagic.php")
+	      .then(response => response.json())
+	      .then(data => {
+            console.log(data);
+	        this.setState({ DragonMagic: data });
 	        
 	      });
 	  }
@@ -49,7 +112,10 @@ class WaterDragon extends Component {
   
 
   componentDidMount() {
-    this.fetchAllDragons();
+      this.fetchOneDragon();
+      this.fetchOneSkill();
+      this.fetchOneGem();
+       this.fetchMagic();
     
   }   
     
@@ -62,7 +128,7 @@ render () {
     
     
     
-    let waterDragon = this.state.allDragons.map((stats) => {
+    let waterDragonStats = this.state.DragonStats.map((stats) => {
         return ( 
             
             <div key={stats.id}>
@@ -78,33 +144,133 @@ render () {
             </div>)
     });
         
-        console.log(waterDragon);
         
+        let waterDragonFactsPart1 = this.state.DragonStats.map((facts) => {
+        return ( 
+            
+            <div key={facts.id}>
+            
+            <div> <h1 className="Title">Common Traits</h1><span> {facts.Traits}</span></div>
+            
+             
+            </div>)
+    });
+        
+            
+   let waterDragonSkills = this.state.DragonSkills.map((skill) => {
+        return ( 
+            
+            <div key={skill.id}>
+            
+            <div> 
+            
+            <span className="bold"> {skill.Name}: </span>
+            <span> {skill.Description}</span>
+            </div>
+            
+            
+            
+            </div>)
+    });   
+       
+       
+   let waterDragonMagic = this.state.DragonMagic.map((magic) => {
+        return ( 
+            
+            <div key={magic.id}>
+            
+            <div> 
+            <span className="bold"> {magic.Name}: </span>
+            <span> {magic.Description}</span>
+            </div>
+            
+            
+            
+            </div>)
+    });  
+       
+    
+            let waterDragonFactsPart2 = this.state.DragonStats.map((facts) => {
+        return ( 
+            
+            <div key={facts.id}>
+            
+            <div> <h1 className="Title">Appearance</h1><span> {facts.Appearance}</span></div>
+            <div> <h1 className="Title">Habitat</h1><span> {facts.Habitat}</span></div>
+            
+             
+            </div>)
+    });
+        
+       
+
+    let waterDragonGem = this.state.DragonGems.map((gem) => {
+        return ( 
+            
+             <div key={gem.id}>
+            
+            <div className="Gem--box"> 
+            <h1 className="Title">Water dragon´s treasured gemstone:</h1>
+            <p>{gem.Description}:</p> 
+            <p>{gem.Abilities}</p>
+            <p>{gem.Found}</p>
+            </div>
+            </div>)
+            
+    });
+        
+
+            let waterDragonFactsPart3 = this.state.DragonStats.map((facts) => {
+        return ( 
+            
+            <div key={facts.id}>
+            
+
+            <div> <h1 className="Title">Characteristics</h1><span> {facts.Characteristics}</span></div>
+            
+             
+            </div>)
+    });
+        
+             
         
         
  return (
      
-     <div>
-     <div className="Header">
-     
-      
-     
-     <p> TEST </p>
+     <div className="Fact--Wrapper">
+     <div className="Header"></div>
      
      
-     </div>
      
-     <div className="Stats--container">
+     <div className="Stat--Container">
      
-            <div className="Stats--box">
+            <div className="Stat--paragraph">
      
-     
-                    
-                <div>{ waterDragon }</div>
+                { waterDragonStats }
      
             </div>
      
      
+     
+     <div className="Fact--Container">
+     
+     
+     { waterDragonFactsPart1 }
+     
+     <h1 className="Title">Skills:</h1>
+     { waterDragonSkills }
+     
+     <h1 className="Title">Magic:</h1>
+      { waterDragonMagic }
+     
+      { waterDragonFactsPart2 }
+     
+     { waterDragonGem }
+     
+     { waterDragonFactsPart3 }
+     
+
+     </div>
      
      </div>
      
@@ -120,3 +286,4 @@ render () {
 }
 
 export default WaterDragon;
+
