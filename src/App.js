@@ -3,24 +3,27 @@ import './sass/style.scss';
 import SelectBox from './features/select-box/index';
 import WaterDragon from './components/Dragons/WaterDragon';
 
+import Nav from './Nav';
+import WoodDragon from './components/Dragons/WoodDragon';
+import Dragons from './Dragons';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-class App extends Component {
-    
 
+function App() {
     
-  render() {
 
       
       /* klassen Homepage ska till Homepage.js komponenten senare */
       return (
-      
+      <Router>
       <div className="App">
         
-          
+          <Nav />
+          <Route path="/dragons" component={Dragons}/>
+           <Route path="/wooddragon" component={WoodDragon}/>
+          <Route path="/waterdragon" component={WaterDragon}/>
           
             <div>
-          
-                <WaterDragon />
            
           
                 <SelectBox
@@ -72,12 +75,11 @@ class App extends Component {
         </div>
         
     </div>
-
+</Router>
       
       
       );
         
-  }
 }
 
 export default App;

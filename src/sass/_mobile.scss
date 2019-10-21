@@ -199,3 +199,32 @@
    font-weight: bold; 
     
 }
+
+nav{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: lightblue;
+    color: white;
+    
+    
+    
+}
+
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.dragon-links{
+    width: 40%;
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
