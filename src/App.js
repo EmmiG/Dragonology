@@ -42,7 +42,7 @@ function App() {
           <Route path="/fortunecookie" component={FortuneCookie}/>
           
           
-          <div className="Dragons--facts--container">
+          <div className="dragons--facts--container">
            <Route path="/waterdragon" component={WaterDragon}/>
            <Route path="/wooddragon" component={WoodDragon}/>
            <Route path="/brassdragon" component={BrassDragon}/>
