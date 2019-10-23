@@ -40,9 +40,10 @@ function App() {
           <Route path="/dragons" component={Dragons}/>
           <Route path="/dragontest" component={DragonTest}/>
           <Route path="/fortunecookie" component={FortuneCookie}/>
-          
+           </Switch>
           
           <div className="dragons--facts--container">
+           <Switch>
            <Route path="/waterdragon" component={WaterDragon}/>
            <Route path="/wooddragon" component={WoodDragon}/>
            <Route path="/brassdragon" component={BrassDragon}/>
@@ -55,9 +56,9 @@ function App() {
            <Route path="/bronzedragon" component={BronzeDragon}/>
            <Route path="/darkdragon" component={DarkDragon}/>
            <Route path="/metaldragon" component={MetalDragon}/>
-         
-           </div>
           </Switch>
+           </div>
+         
           
           </div>
           

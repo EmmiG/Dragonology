@@ -1,6 +1,6 @@
 <?php
     /* 
-    * This file fetches the id = 1 which stands for the Water dragon,
+    * This file fetches the id = 1 which stands for the Water dragon treasured gemstone,
     * just in case I took limit on just 1 so the server won´t fetch more than 1.
     */
     include_once 'database.php';

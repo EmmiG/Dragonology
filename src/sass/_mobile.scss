@@ -1,12 +1,23 @@
-.TEST{
-    
-    color: green;
+
+
+#Logo{
+   display: none;
 }
 
+.nav--wrapper{
+    width: 375px;
+    height: 80px;
+    left: 0;
+}
 
-#Home{
-    height: 300px;
-    width: 300px;
+.mainmenu--container{
+     height: 1900px;
+    width: 100%;
+    border: 1px solid #aaa;
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+    
 }
 
 * {
@@ -25,7 +36,7 @@
 
 .select-box--dragons img{
     
-     height: 60px;
+    height: 60px;
     width: 93px;
     padding: 0;
     margin: 0;
@@ -126,10 +137,7 @@
     border: 1px solid #aaa;
     width: 100%;
     margin: 0;
-    padding: 0;
-    
-    
-    
+    padding: 0;   
     
 }
 
@@ -201,12 +209,13 @@
 }
 
 nav{
-  display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
     background: lightblue;
     color: white;
+    padding: 0;
     
     
     
@@ -218,6 +227,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    padding: 4px 12px 0px 10px;
+    
     
 }
 
