@@ -64,11 +64,6 @@ function App() {
           
             <div>
            
-                    <SelectBox
-                        items={[
-                        { value: '', id: 0 },
-                        ]} 
-                    />
           
             </div>
     </div>
