@@ -33,6 +33,7 @@ function App() {
       <div className="App">
         
           <div className="homepage--wrapper">
+          
           <Nav />
           <Switch> 
           <Route path="/" exact component={HomePage}/>

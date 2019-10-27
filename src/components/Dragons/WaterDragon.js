@@ -148,9 +148,9 @@ render () {
         let waterDragonFactsPart1 = this.state.DragonStats.map((facts) => {
         return ( 
             
-            <div key={facts.id}>
+            <div className="parchment--text" key={facts.id}>
             
-            <div> <h1 className="Title">Common Traits</h1><span> {facts.Traits}</span></div>
+            <div> <h1 className="title">Common Traits</h1><span> {facts.Traits}</span></div>
             
              
             </div>)
@@ -160,7 +160,7 @@ render () {
    let waterDragonSkills = this.state.DragonSkills.map((skill) => {
         return ( 
             
-            <div key={skill.id}>
+            <div className="parchment--text" key={skill.id}>
             
             <div> 
             
@@ -177,7 +177,7 @@ render () {
    let waterDragonMagic = this.state.DragonMagic.map((magic) => {
         return ( 
             
-            <div key={magic.id}>
+            <div  className="parchment--text" key={magic.id}>
             
             <div> 
             <span className="bold"> {magic.Name}: </span>
@@ -193,10 +193,10 @@ render () {
             let waterDragonFactsPart2 = this.state.DragonStats.map((facts) => {
         return ( 
             
-            <div key={facts.id}>
+            <div className="parchment--text" key={facts.id}>
             
-            <div> <h1 className="Title">Appearance</h1><span> {facts.Appearance}</span></div>
-            <div> <h1 className="Title">Habitat</h1><span> {facts.Habitat}</span></div>
+            <div> <h1 className="title">Appearance</h1><span> {facts.Appearance}</span></div>
+            <div> <h1 className="title">Habitat</h1><span> {facts.Habitat}</span></div>
             
              
             </div>)
@@ -207,10 +207,10 @@ render () {
     let waterDragonGem = this.state.DragonGems.map((gem) => {
         return ( 
             
-             <div key={gem.id}>
+             <div className="parchment--text" key={gem.id}>
             
             <div className="Gem--box"> 
-            <h1 className="Title">Water dragon´s treasured gemstone:</h1>
+            <h1 className="title">Water dragon´s treasured gemstone:</h1>
             <p>{gem.Description}:</p> 
             <p>{gem.Abilities}</p>
             <p>{gem.Found}</p>
@@ -223,10 +223,10 @@ render () {
             let waterDragonFactsPart3 = this.state.DragonStats.map((facts) => {
         return ( 
             
-            <div key={facts.id}>
+            <div className="parchment--text" key={facts.id}>
             
 
-            <div> <h1 className="Title">Characteristics</h1><span> {facts.Characteristics}</span></div>
+            <div> <h1 className="title">Characteristics</h1><span> {facts.Characteristics}</span></div>
             
              
             </div>)
@@ -237,14 +237,14 @@ render () {
         
  return (
      
-     <div className="Fact--Wrapper">
-     <div className="Header"></div>
+     <div className="fact--wrapper">
+     <div className="header"></div>
      
      
      
-     <div className="Stat--Container">
+     <div className="stat--container">
      
-            <div className="Stat--paragraph">
+            <div className="stat--paragraph">
      
                 { waterDragonStats }
      
@@ -252,24 +252,22 @@ render () {
      
      
      
-     <div className="Fact--Container">
+     <div className="fact--container">
      
-     
-     { waterDragonFactsPart1 }
-     
-     <h1 className="Title">Skills:</h1>
-     { waterDragonSkills }
-     
-     <h1 className="Title">Magic:</h1>
-      { waterDragonMagic }
-     
-      { waterDragonFactsPart2 }
-     
-     { waterDragonGem }
-     
-     { waterDragonFactsPart3 }
-     
+         { waterDragonFactsPart1 }
 
+         <h1 className="title">Skills:</h1>
+         { waterDragonSkills }
+
+         <h1 className="title">Magic:</h1>
+          { waterDragonMagic }
+
+          { waterDragonFactsPart2 }
+
+         { waterDragonGem }
+
+         { waterDragonFactsPart3 }
+     
      </div>
      
      </div>

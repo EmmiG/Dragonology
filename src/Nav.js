@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 class Nav extends React.Component {
     
 constructor(props) {
@@ -76,9 +77,11 @@ render () {
       
       return (
       <div className="nav--wrapper">
+         
           <div className="mainmenu--container">
+        
            <nav> 
-              <div id="Logo"> Logo </div>
+              <div id="logo"> Logo </div>
               <ul className="nav-links">
               <Link to="/homepage">
               <li>  { this.renderHome() } </li>
