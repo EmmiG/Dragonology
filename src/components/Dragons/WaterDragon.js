@@ -8,7 +8,8 @@
 
 import React, { Component } from 'react';
 import "./../../App.scss";
-import SelectBox from './../../features/select-box/index';
+import WaterDragonhead from '../../images/Dragonheads/wood.jpg';
+
 
 
 class DragonStats {
@@ -108,6 +109,9 @@ class WaterDragon extends Component {
 	        
 	      });
 	  }
+    
+ 
+	  
 
   
 
@@ -125,9 +129,7 @@ class WaterDragon extends Component {
 
 render () {
     
-    
-    
-    
+
     let waterDragonStats = this.state.DragonStats.map((stats) => {
         return ( 
             
@@ -240,7 +242,11 @@ render () {
      <div className="fact--wrapper">
      <div className="header"></div>
      
-     
+            <div className="dragonhead">
+            
+                 <img src={WaterDragonhead} />
+            
+            </div>
      
      <div className="stat--container">
      

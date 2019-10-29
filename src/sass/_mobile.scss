@@ -187,7 +187,7 @@ dragons--facts--container{
 
 .stat--paragraph{
   margin: auto;
-  width: 80%;
+  width: 70%;
   border: 1px solid #000;
   padding: 10px;
   text-align: left;
@@ -199,6 +199,7 @@ dragons--facts--container{
   width: 90%;
   padding: 10px;
   text-align: left;
+  font-size: 13px;
     
 }
 
@@ -265,6 +266,13 @@ dragons--facts--container{
     border-bottom: 10px;
 }
 
+.title{
+    color:#5facff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .bold{
    font-weight: bold; 
     
@@ -306,4 +314,23 @@ nav{
      flex-direction: column;
     align-items: center;
     list-style: none;
+}
+
+
+.dragonhead{
+    display: flex;
+    display:inline-block;
+    padding-top: 70px;
+    
+    
+}
+
+.dragonhead img{
+      display: flex;
+    width: 260px;
+    height: 205px;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 0;
 }
