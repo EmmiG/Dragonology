@@ -1,12 +1,12 @@
 <?php
     /* 
-    * This file fetches the id = 3 which stands for the Brass dragon,
+    * This file fetches the id = 9 which stands for the Light dragon,
     * just in case I took limit on just 1. The database stats 1 - 8 which
     * means the Name - Nesting columns. The stats will be in the Stats container
     * according to the mockup. 
     */
     include_once 'database.php';
-    $statement = $pdo->prepare("SELECT * FROM dragons WHERE id = 3 LIMIT 1");
+    $statement = $pdo->prepare("SELECT * FROM dragons WHERE id = 9 LIMIT 1");
     $statement->execute();
     $data = $statement->fetchAll(PDO::FETCH_ASSOC);
     echo json_encode($data, JSON_PRETTY_PRINT);

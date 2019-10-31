@@ -81,7 +81,7 @@ class WaterDragon extends Component {
 	  }
  
  fetchOneSkill = () => {
-	    fetch("http://localhost/dragonology/server/fetchSkills.php")
+	    fetch("http://localhost/dragonology/server/fetchSkillsWater.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
@@ -91,7 +91,7 @@ class WaterDragon extends Component {
 	  }
  
   fetchOneGem = () => {
-	    fetch("http://localhost/dragonology/server/fetchGem.php")
+	    fetch("http://localhost/dragonology/server/fetchGemWater.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
@@ -101,7 +101,7 @@ class WaterDragon extends Component {
 	  }
   
     fetchMagic = () => {
-	    fetch("http://localhost/dragonology/server/fetchMagic.php")
+	    fetch("http://localhost/dragonology/server/fetchMagicWater.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
@@ -228,7 +228,8 @@ render () {
             <div className="parchment--text" key={facts.id}>
             
 
-            <div> <h1 className="title">Characteristics</h1><span> {facts.Characteristics}</span></div>
+            <div> <h1 className="title">Characteristics</h1>
+            <span> {facts.Characteristics}</span></div>
             
              
             </div>)

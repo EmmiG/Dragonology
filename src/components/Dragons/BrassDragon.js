@@ -8,6 +8,7 @@
 
 import React, { Component } from 'react';
 import "./../../App.scss";
+import BrassDragonhead from '../../images/Dragonheads/wood.jpg';
 
 
 
@@ -80,7 +81,7 @@ class BrassDragon extends Component {
 	  }
  
  fetchOneSkill = () => {
-	    fetch("http://localhost/dragonology/server/fetchAllSkills.php")
+	    fetch("http://localhost/dragonology/server/fetchSkillsBrass.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
@@ -90,7 +91,7 @@ class BrassDragon extends Component {
 	  }
  
   fetchOneGem = () => {
-	    fetch("http://localhost/dragonology/server/fetchGem.php")
+	    fetch("http://localhost/dragonology/server/fetchGemBrass.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
@@ -100,7 +101,7 @@ class BrassDragon extends Component {
 	  }
   
     fetchMagic = () => {
-	    fetch("http://localhost/dragonology/server/fetchMagic.php")
+	    fetch("http://localhost/dragonology/server/fetchMagicBrass.php")
 	      .then(response => response.json())
 	      .then(data => {
             console.log(data);
@@ -108,6 +109,9 @@ class BrassDragon extends Component {
 	        
 	      });
 	  }
+    
+ 
+	  
 
   
 
@@ -125,10 +129,8 @@ class BrassDragon extends Component {
 
 render () {
     
-    
-    
-    
-    let brassDragonStats = this.state.DragonStats.filter(stats => stats.id == 3).map((stats) => {
+
+    let brassDragonStats = this.state.DragonStats.map((stats) => {
         return ( 
             
             <div key={stats.id}>
@@ -145,12 +147,12 @@ render () {
     });
         
         
-        let brassDragonFactsPart1 = this.state.DragonStats.filter(stats => stats.id == 3).map((facts) => {
+        let brassDragonFactsPart1 = this.state.DragonStats.map((facts) => {
         return ( 
             
-            <div key={facts.id}>
+            <div className="parchment--text" key={facts.id}>
             
-            <div> <h1 className="Title">Common Traits</h1><span> {facts.Traits}</span></div>
+            <div> <h1 className="title">Common Traits</h1><span> {facts.Traits}</span></div>
             
              
             </div>)
@@ -160,7 +162,7 @@ render () {
    let brassDragonSkills = this.state.DragonSkills.map((skill) => {
         return ( 
             
-            <div key={skill.id}>
+            <div className="parchment--text" key={skill.id}>
             
             <div> 
             
@@ -177,7 +179,7 @@ render () {
    let brassDragonMagic = this.state.DragonMagic.map((magic) => {
         return ( 
             
-            <div key={magic.id}>
+            <div  className="parchment--text" key={magic.id}>
             
             <div> 
             <span className="bold"> {magic.Name}: </span>
@@ -193,10 +195,10 @@ render () {
             let brassDragonFactsPart2 = this.state.DragonStats.map((facts) => {
         return ( 
             
-            <div key={facts.id}>
+            <div className="parchment--text" key={facts.id}>
             
-            <div> <h1 className="Title">Appearance</h1><span> {facts.Appearance}</span></div>
-            <div> <h1 className="Title">Habitat</h1><span> {facts.Habitat}</span></div>
+            <div> <h1 className="title">Appearance</h1><span> {facts.Appearance}</span></div>
+            <div> <h1 className="title">Habitat</h1><span> {facts.Habitat}</span></div>
             
              
             </div>)
@@ -207,10 +209,10 @@ render () {
     let brassDragonGem = this.state.DragonGems.map((gem) => {
         return ( 
             
-             <div key={gem.id}>
+             <div className="parchment--text" key={gem.id}>
             
             <div className="Gem--box"> 
-            <h1 className="Title">Water dragon´s treasured gemstone:</h1>
+            <h1 className="title">Brass dragon´s treasured gemstone:</h1>
             <p>{gem.Description}:</p> 
             <p>{gem.Abilities}</p>
             <p>{gem.Found}</p>
@@ -223,10 +225,11 @@ render () {
             let brassDragonFactsPart3 = this.state.DragonStats.map((facts) => {
         return ( 
             
-            <div key={facts.id}>
+            <div className="parchment--text" key={facts.id}>
             
 
-            <div> <h1 className="Title">Characteristics</h1><span> {facts.Characteristics}</span></div>
+            <div> <h1 className="title">Characteristics</h1>
+            <span> {facts.Characteristics}</span></div>
             
              
             </div>)
@@ -237,14 +240,18 @@ render () {
         
  return (
      
-     <div className="Fact--Wrapper">
-     <div className="Header"></div>
+     <div className="fact--wrapper">
+     <div className="header"></div>
      
+            <div className="dragonhead">
+            
+                 <img src={BrassDragonhead} />
+            
+            </div>
      
+     <div className="stat--container">
      
-     <div className="Stat--Container">
-     
-            <div className="Stat--paragraph">
+            <div className="stat--paragraph">
      
                 { brassDragonStats }
      
@@ -252,24 +259,22 @@ render () {
      
      
      
-     <div className="Fact--Container">
+     <div className="fact--container">
      
-     
-     { brassDragonFactsPart1 }
-     
-     <h1 className="Title">Skills:</h1>
-     { brassDragonSkills }
-     
-     <h1 className="Title">Magic:</h1>
-      { brassDragonMagic }
-     
-      { brassDragonFactsPart2 }
-     
-     { brassDragonGem }
-     
-     { brassDragonFactsPart3 }
-     
+         { brassDragonFactsPart1 }
 
+         <h1 className="title">Skills:</h1>
+         { brassDragonSkills }
+
+         <h1 className="title">Magic:</h1>
+          { brassDragonMagic }
+
+          { brassDragonFactsPart2 }
+
+         { brassDragonGem }
+
+         { brassDragonFactsPart3 }
+     
      </div>
      
      </div>
