@@ -12,6 +12,7 @@ constructor(props) {
         
         this.state = {
             allMenus: [],
+            hover: false
             
         }
      }
@@ -39,6 +40,18 @@ this.state.allMenus
           
             </div>
     ));
+
+renderHomeHover = () =>
+this.state.allMenus
+    .filter(menu => menu.id == 17)
+    .map(menu => (
+          <div className="select-box--home" key={menu.id}>
+            
+            <img src={menu.picUrl} alt={menu.picName} />
+          
+            </div>
+    ));
+
 
 renderDragons = () =>
 this.state.allMenus
@@ -73,18 +86,54 @@ this.state.allMenus
           </div>
     ));
 
+hoverop()
+{
+     this.setState({ 
+     hover: true
+     })  
+}
+
+hoverout()
+{
+     this.setState({ 
+     hover: false
+     })  
+}
+
 render () {
-      
+     let homehover
+     if (this.state.hover) {
+         homehover = <div>{ this.renderHomeHover() } </div>
+         
+     } else {
+         homehover = <div>{ this.renderHome() } </div>
+     }
+    
+    
+     
+        
+    
+ 
       return (
       <div className="nav--wrapper">
          
           <div className="mainmenu--container">
-        
+          <div onClick={()=>this.hoverop()} onClick={()=>this.hoverout()}> 
+          {   
+              this.state.hover ? 
+                (
+                    <div>{ this.renderHomeHover() } </div>
+                ) : (
+                    <div>{ this.renderHome() } </div>
+                )
+            } 
+          <div >HOOVER </div>  
+    </div>
            <nav> 
               <div id="logo"> Logo </div>
               <ul className="nav-links">
               <Link to="/homepage">
-              <li>  { this.renderHome() } </li>
+              <li onClick={()=>this.hoverop()} >  {homehover} </li>
               </Link>
               <Link to="/dragons">
               <li> { this.renderDragons() } </li>
