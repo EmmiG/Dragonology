@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 import "./../../App.scss";
-import LightningDragonhead from '../../images/Dragonheads/wood.jpg';
+import LightningDragonhead from '../../images/Dragonheads/lightning.jpg';
 
 
 

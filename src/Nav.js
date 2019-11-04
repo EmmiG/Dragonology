@@ -1,6 +1,9 @@
 import React from 'react';
 import "./App.scss";
 import { Link } from 'react-router-dom';
+import logo from './images/logo_dragonology.png';
+import logoonClick from './images/logo_dragonology_onClick.png';
+
 
 
 
@@ -130,7 +133,7 @@ render () {
           <div >HOOVER </div>  
     </div>
            <nav> 
-              <div id="logo"> Logo </div>
+              <div id="logo"> Logo<img src={logo} /> </div>
               <ul className="nav-links">
               <Link to="/homepage">
               <li onClick={()=>this.hoverop()} >  {homehover} </li>

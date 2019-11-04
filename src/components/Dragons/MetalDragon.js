@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 import "./../../App.scss";
-import MetalDragonhead from '../../images/Dragonheads/wood.jpg';
+import MetalDragonhead from '../../images/Dragonheads/metal.jpg';
 
 
 
