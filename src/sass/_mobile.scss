@@ -311,7 +311,7 @@ nav{
 .dragon-links{
     width: 100%;
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     align-items: center;
     list-style: none;
 }
@@ -333,4 +333,9 @@ nav{
     background-repeat: no-repeat; 
     background-size: cover;
     padding: 0;
+}
+
+.waterTestH :hover .dragon-links--images{
+  background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');  
+    
 }
