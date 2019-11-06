@@ -15,10 +15,12 @@ constructor(props) {
         
         this.state = {
             allMenus: [],
-            Clickhome: false,
+            Clicklogo: false,
+            Clickhome: false,   
             Clickdragons: false,
             Clickdragontest: false,
-            Clickfortunecookie: false
+            Clickfortunecookie: false,
+            
             
         }
      }
@@ -36,11 +38,13 @@ constructor(props) {
     this.fetchAllMenus();
   }
 
+
+
 renderHome = () =>
 this.state.allMenus
     .filter(menu => menu.id == 1)
     .map(menu => (
-          <div className="select-box--home" key={menu.id}>
+          <div id= "home" className="select-box--home" key={menu.id}>
             
             <img src={menu.picUrl} alt={menu.picName} />
           
@@ -125,6 +129,17 @@ this.state.allMenus
             </div>
     ));
 
+
+clickstatuslogo()
+{
+     this.setState((prevState)=>
+         
+         ({ 
+     Clicklogo: !prevState.Clicklogo
+         
+     })); 
+}
+
 clickstatushome()
 {
      this.setState((prevState)=>
@@ -205,6 +220,15 @@ render () {
      } else {
          fortunecookieclick = <div>{ this.renderFortuneCookie() } </div>
      }
+    
+    
+    let logoclick
+     if (this.state.Clicklogo) {
+         logoclick = <div> <img src={ logo } /> </div>
+         
+     } else {
+         logoclick = <div><img src={ logoonClick } /> </div>
+     }
  
       return (
       <div className="nav--wrapper">
@@ -212,8 +236,11 @@ render () {
           <div className="mainmenu--container">
 
            <nav> 
-              <div id="logo"> Logo<img src={logo} /> </div>
+            
               <ul className="nav-links">
+          <Link to="/homepage">
+              <div id="logo" onClick={()=>this.clickstatuslogo()}> {logoclick} </div>
+               </Link>
               <Link to="/homepage">
               <li onClick={()=>this.clickstatushome()} >  {homeclick} </li>
               </Link>
