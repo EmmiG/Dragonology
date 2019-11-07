@@ -1,4 +1,108 @@
-.TEST{
+
+.logo--background{
+    height: 170px;
+    width: 220px;
+    padding-left: 20px;
+}
+
+
+.logo--background img {
+    height: 145px;
+    width: 217px;
+}
+
+#logo{
+   display: inline-block;
+   height: 112px;
+   width: 165px;
+    padding-right: 60px;
+   
+}
+
+
+#logo img{
+    height: 112px;
+    width: 165px;
+    margin: 20px 10px;
+}
+
+
+
+.nav--wrapper{
+    min-width: 1265px;
+    min-height: 800px;
     
-    color: red;
+}
+
+nav{
+  
+}
+
+
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    padding-right: 950px;
+    padding-top: 100px;
+    
+    
+}
+
+
+
+.select-box--home{
+    
+ 
+    width: 241px;
+   
+}
+
+.select-box--dragons{
+    
+   
+    width: 241px;
+   
+}
+
+.select-box--test{
+    
+    
+    width: 241px;
+   
+}
+
+.select-box--cookie{
+    
+    
+    width: 241px;
+   
+}
+
+.select-box--home img{
+    
+   
+    width: 241px;
+   
+}
+
+.select-box--dragons img{
+    
+    
+    width: 241px;
+   
+}
+
+.select-box--test img{
+    
+   
+    width: 241px;
+   
+}
+
+.select-box--cookie img{
+    
+ 
+    width: 241px;
+   
 }

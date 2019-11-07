@@ -306,6 +306,12 @@ nav{
     
 }
 
+
+.nav--menu{
+    display: flex;
+    flex-direction: row;
+}
+
 /* contain submenus all 12 dragons, all images and links */
 
 .dragon-links{

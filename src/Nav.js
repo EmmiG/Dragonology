@@ -239,8 +239,11 @@ render () {
             
               <ul className="nav-links">
           <Link to="/homepage">
+             <div className="logo--background">
               <div id="logo" onClick={()=>this.clickstatuslogo()}> {logoclick} </div>
+             </div>
                </Link>
+              <div className="nav--menu">
               <Link to="/homepage">
               <li onClick={()=>this.clickstatushome()} >  {homeclick} </li>
               </Link>
@@ -253,6 +256,7 @@ render () {
               <Link to="/fortunecookie">
               <li onClick={()=>this.clickstatusfortunecookie()}> { fortunecookieclick } </li>
               </Link>
+              </div>
               </ul>
               </nav>
 
