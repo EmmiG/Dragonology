@@ -13,8 +13,16 @@
 
 }
 
+.homepage--stats--wrapper{
+    
+     height: 100%;
+    width: 100%;
+     margin: 0;
+    padding: 0;
+}
 
-dragons--facts--container{
+
+.dragons--facts--container{
         height: 100%;
     width: 100%;
      margin: 0;
@@ -98,7 +106,6 @@ dragons--facts--container{
 
 .dragon--links--container{
          height: 1900px;
-    width: 100%;
     width: 100%;
     margin: 0;
     padding: 0;  
@@ -232,38 +239,6 @@ dragons--facts--container{
 }
 
 
-.select-box--arrow {
-    width: 93px;
-    height: 60px;
-    padding: 4px 12px 0px 0px;
-    display: inline-block;
-    position: absolute;
-     top: 15px;
-    margin: 0;
-    left: 93px;
-}
-
-.select-box--arrow-down {
-    position: absolute;
-    top: 12px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 10px;
-}
-
-.select-box--arrow-up {
-    position: absolute;
-    top: 10px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 10px;
-}
 
 .title{
     color:#5facff;
@@ -331,11 +306,52 @@ nav{
 }
 
 .dragonhead img{
-      display: flex;
+    display: flex;
     width: 260px;
     height: 205px;
     align-items: center;
     background-repeat: no-repeat; 
     background-size: cover;
     padding: 0;
+}
+
+.dragonology{
+    display: flex;
+    display:inline-block;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.dragonology img{
+    width: 257px;
+    height: 162px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+ 
+}
+
+
+.homestats--container{
+    display:inline-block;
+    align-items: center;
+    text-align: left;
+    width: 257px;
+    height: 300px;
+        
+}
+
+.homepage--title--dragonology{
+    
+      font-size: 30px;
+    
+}
+
+.homepage--title{
+    
+      font-size: 18px;
+    
+}
+
+.what--dragon{
+     font-size: 20px;
 }
