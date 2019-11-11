@@ -355,3 +355,36 @@ nav{
 .what--dragon{
      font-size: 20px;
 }
+
+
+/*Fortune cookie page*/
+
+.wisedragon--picture{
+    display: flex;
+    display:inline-block;
+    padding-top: 70px;
+    
+    
+}
+
+.wisedragon--picture img{
+    display: flex;
+    width: 260px;
+    height: 205px;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.fortune--cookie--text--container{
+    
+  margin: 0px 0px 10px 7px;
+  width: 93%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+
