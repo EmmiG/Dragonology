@@ -3,30 +3,48 @@
 */
 
 
-
-import React from 'react';
+import React, { useState } from "react";
 import "./../../App.scss";
+import fortunes from "./fortunes.json";
 
 
 
 
-function FortuneCookie() {
-    
-
-      
-      return (
-      
-      <div>
-        <h1> Todays fortune is </h1>
-          
-           
-        
-    </div>
-
-      
-      
-      );
-        
+// this would be a network call. just mocking out for demo.
+// random lorem ipsum generated on https://next.json-generator.com/4yP4GV7oP
+function fetchFortune(fortuneId) {
+  return new Promise(res => {
+    const response = { fortune: fortunes[fortuneId] };
+    res(response);
+  });
 }
 
-export default FortuneCookie;
+// generate a random number
+function getRandomNumber() {
+  const min = Math.ceil(25);
+  const max = Math.floor(1);
+
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+const RandomFortune = () => {
+  const [fortune, setFortune] = useState("");
+
+  // On click of the fortune generator, we generate a number and then request
+  // the fortune of that id from the backend.
+  const generateFortune = () => {
+    const id = getRandomNumber();
+
+    fetchFortune(id).then(response => setFortune(response.fortune));
+  };
+
+  return (
+    <div>
+      <div className="fortune">{fortune}</div>
+      <div>
+        <button onClick={generateFortune}>Today´s Fortune</button>
+      </div>
+    </div>
+  );
+};
+
+export default RandomFortune;

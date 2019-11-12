@@ -23,6 +23,8 @@ import BronzeDragon from './components/Dragons/BronzeDragon';
 import DarkDragon from './components/Dragons/DarkDragon';
 import MetalDragon from './components/Dragons/MetalDragon';
 
+import Footer from './components/Footer';
+
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -63,14 +65,16 @@ function App() {
           
           </div>
           
-            <div>
-           
+          <div>
+          {/* footer Component */} 
           
-            </div>
+            </div> 
+    
     </div>
+{/* end of the wrapper */}     
 </Router>
       
-      
+             
       );
         
 }

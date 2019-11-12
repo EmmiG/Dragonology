@@ -126,7 +126,16 @@ nav img {
 /*  Dragon pages */
 
 
+
 .dragon-links--images{
+     padding: 0;
+    margin: 0;
+}
+.dragon-links--images img{
+    height: 165px;
+    width: 375px;
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -135,8 +144,11 @@ nav img {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     list-style: none;
+     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
 }
 
 
@@ -259,7 +271,23 @@ nav img {
 }
 
 
-/* testing */
+/* dragons */
+
+.dragon--links--wrapper{
+    width: 768px;
+  
+    
+    
+}
+
+.dragon--links--container{
+    
+
+
+}
+
+
+
 
 
 
