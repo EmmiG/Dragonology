@@ -21,10 +21,10 @@ function fetchFortune(fortuneId) {
 
 // generate a random number
 function getRandomNumber() {
-  const min = Math.ceil(25);
-  const max = Math.floor(1);
+  const max = Math.ceil(25);
+  const min = Math.floor(1);
 
-  return Math.floor(Math.random() * (max - min)) + min;
+  return Math.floor(Math.random() * (min - max)) + max;
 }
 const RandomFortune = () => {
   const [fortune, setFortune] = useState("");

@@ -257,7 +257,7 @@ render () {
      
             </div>
      
-     
+     </div>
      
      <div className="fact--container">
      
@@ -275,7 +275,7 @@ render () {
 
          { waterDragonFactsPart3 }
      
-     </div>
+     
      
      </div>
      
