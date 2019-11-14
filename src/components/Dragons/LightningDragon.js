@@ -244,7 +244,7 @@ render () {
      
             <div className="dragonhead">
             
-                 <img src={LightningDragonhead} />
+                 <img alt="lightningdragonhead" src={LightningDragonhead} />
             
             </div>
      
@@ -255,7 +255,7 @@ render () {
                 { lightningDragonStats }
      
             </div>
-     
+            </div>
      
      
      <div className="fact--container">
@@ -274,7 +274,7 @@ render () {
 
          { lightningDragonFactsPart3 }
      
-     </div>
+     
      
      </div>
      

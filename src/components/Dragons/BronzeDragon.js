@@ -243,7 +243,7 @@ render () {
      
             <div className="dragonhead">
             
-                 <img src={BronzeDragonhead} />
+                 <img alt="bronzedragonhead" src={BronzeDragonhead} />
             
             </div>
      
@@ -255,7 +255,7 @@ render () {
      
             </div>
      
-     
+           </div>
      
      <div className="fact--container">
      
@@ -274,7 +274,7 @@ render () {
 
          { bronzeDragonFactsPart3 }
      
-     </div>
+     
      
      </div>
      

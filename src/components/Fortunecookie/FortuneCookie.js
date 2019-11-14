@@ -30,7 +30,7 @@ function FortuneCookie () {
      </div>
      
      <div className="wisedragon--picture">
-     <img src={wiseDragon}  alt="wisedragon--image" />
+     <img src={wiseDragon}  alt="wisedragon" />
      </div>
      
      <div className="fortune--cookie--text--container">

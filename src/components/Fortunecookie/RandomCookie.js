@@ -39,9 +39,10 @@ const RandomFortune = () => {
 
   return (
     <div>
-      <div className="fortune">{fortune}</div>
-      <div>
-        <button onClick={generateFortune}>Today´s Fortune</button>
+      <div className="fortune">{fortune}
+      <div className="button--container--todays--fortune">
+        <button id="todays--fortune--button" onClick={generateFortune}>Today´s Fortune</button>
+      </div>
       </div>
     </div>
   );

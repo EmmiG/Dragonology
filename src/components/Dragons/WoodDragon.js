@@ -245,7 +245,7 @@ render () {
      
             <div className="dragonhead">
             
-                 <img src={WoodDragonhead} />
+                 <img alt="wooddragonhead" src={WoodDragonhead} />
             
             </div>
      
@@ -256,7 +256,7 @@ render () {
                 { woodDragonStats }
      
             </div>
-     
+            </div>
      
      
      <div className="fact--container">
@@ -275,7 +275,7 @@ render () {
 
          { woodDragonFactsPart3 }
      
-     </div>
+     
      
      </div>
      

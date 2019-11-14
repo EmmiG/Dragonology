@@ -244,7 +244,7 @@ render () {
      
             <div className="dragonhead">
             
-                 <img src={ForestDragonhead} />
+                 <img alt="forestdragonhead" src={ForestDragonhead} />
             
             </div>
      
@@ -255,7 +255,7 @@ render () {
                 { forestDragonStats }
      
             </div>
-     
+            </div>
      
      
      <div className="fact--container">
@@ -274,7 +274,7 @@ render () {
 
          { forestDragonFactsPart3 }
      
-     </div>
+     
      
      </div>
      

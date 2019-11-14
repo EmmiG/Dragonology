@@ -244,7 +244,7 @@ render () {
      
             <div className="dragonhead">
             
-                 <img src={DarkDragonhead} />
+                 <img alt="darkdragonhead" src={DarkDragonhead} />
             
             </div>
      
@@ -256,7 +256,7 @@ render () {
      
             </div>
      
-     
+            </div>
      
      <div className="fact--container">
      
@@ -274,7 +274,7 @@ render () {
 
          { darkDragonFactsPart3 }
      
-     </div>
+     
      
      </div>
      

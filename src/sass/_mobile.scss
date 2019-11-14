@@ -31,14 +31,13 @@
 }
 .nav--wrapper{
     width: 375px;
-    height: 80px;
+    height: 100px;
     left: 0;
 }
 
 .mainmenu--container{
-     height: 1900px;
+     height: 100px;
     width: 100%;
-    border: 1px solid #aaa;
     margin: 0;
     padding: 0;  
     
@@ -110,6 +109,8 @@
     margin: 0;
     padding: 0;  
 }
+
+
 .dragon-links--images {
 
     display: flex;
@@ -339,6 +340,12 @@ nav{
         
 }
 
+.fact--container{
+-webkit-user-modify: read-write-plaintext-only;  
+    margin: 0;
+    padding: 0;
+}
+
 .homepage--title--dragonology{
     
       font-size: 30px;
@@ -380,14 +387,30 @@ nav{
 .fortune--cookie--text--container{
     
   margin: 0px 0px 10px 7px;
-  width: 93%;
+  width: 96%;
   border: 1px solid #000;
   padding: 10px;
   text-align: center;
 }
 
 .fortune{
+    height: 150px;
     min-height: 50px;
+}
+
+.button--container--todays--fortune{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#todays--fortune--button{
+    
+    height: 40px;
+    width: 140px;
+    border-radius: 8px;
+    border: none;
+ 
+    
 }
 
 

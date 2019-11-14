@@ -224,10 +224,10 @@ render () {
     
     let logoclick
      if (this.state.Clicklogo) {
-         logoclick = <div> <img src={ logo } /> </div>
+         logoclick = <div> <img alt="logo" src={ logo } /> </div>
          
      } else {
-         logoclick = <div><img src={ logoonClick } /> </div>
+         logoclick = <div><img alt="logoonclick" src={ logoonClick } /> </div>
      }
  
       return (
