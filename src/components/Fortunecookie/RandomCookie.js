@@ -13,10 +13,9 @@ import fortunes from "./fortunes.json";
 // this would be a network call. just mocking out for demo.
 // random lorem ipsum generated on https://next.json-generator.com/4yP4GV7oP
 function fetchFortune(fortuneId) {
-  return new Promise(res => {
-    const response = { fortune: fortunes[fortuneId] };
-    res(response);
-  });
+
+
+  
 }
 
 // generate a random number

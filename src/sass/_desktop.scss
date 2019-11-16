@@ -13,8 +13,8 @@
 
 #logo{
    display: inline-block;
-   height: 112px;
-   width: 165px;
+   height: 170px;
+   width: 200px;
     padding-right: 60px;
    
 }
@@ -29,12 +29,23 @@
 
 
 .nav--wrapper{
-    min-width: 1265px;
-    min-height: 800px;
+   min-width: 200px;
+   min-height: 170px;
+    margin: 0;
+    
     
 }
 
 nav{
+    
+    order: 4; /*fixed*/
+    justify-content: none;
+      background-image: none;
+     padding: 0;
+    width: 30%;
+    position: absolute;
+    
+    
   
 }
 
@@ -43,8 +54,8 @@ nav{
 .nav-links{
     display: flex;
     flex-direction: column;
-    padding-right: 950px;
-    padding-top: 100px;
+    padding: 0;
+    
     
     
 }
@@ -109,4 +120,158 @@ nav{
  
     width: 241px;
    
+}
+
+
+
+/*  Dragon pages */
+
+
+.title{
+    /*fixed*/
+    font-size: 24x;
+}
+
+.dragon-links--images{
+     padding: 0;
+    margin: 0;
+}
+.dragon-links--images img{
+    height: 165px;
+    width: 375px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.dragon-links{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    list-style: none;
+     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+}
+
+
+
+
+/* parent div in any of the dragon pages*/
+.fact--wrapper{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+
+/* child div in any of the dragon pages */
+.dragonhead{
+    /*fixed*/
+    display: flex;
+    width: 30%;
+    height: 350px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 0;
+    order: 2;
+    border: 1px solid #000; /*fixed*/
+    
+    
+}
+
+.dragonhead img{
+    /*fixed*/
+    width: 308px;
+    height: 467px;
+    margin: 0;
+}
+
+/* child div in any of the dragon pages 
+* that contains all the stats and 
+* the stat--paragraph div
+*/
+.stat--container{
+    display: flex; /*fixed*/
+   height: 350px; /*fixed*/
+    border: 1px solid #000;
+    width: 30%;
+    margin: 0;
+    order: 1; /*fixed*/
+    position: relative; /*fixed*/
+    padding: 0; /*fixed*/
+}
+
+.stat--paragraph{
+  margin: auto;
+  border: none;
+  padding: 50px 20px 0px 0px;
+  text-align: left;
+    width: 80%;
+    height: 350px; /*fixed*/
+    font-size: 20px; /*fixed*/
+    
+    
+    
+}
+
+/* child div in any of the dragon pages 
+* that contains all the facts and 
+* the parchment--text div 
+*/
+.fact--container{
+    overflow-y: scroll;
+      width: 70%;
+     height: 350px;
+     order: 3; /*fixed*/
+    padding: 0;   
+    display: inline-block;
+    
+}
+
+.parchment--text{
+    
+  margin: 0;
+     width: 100%;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+
+
+
+.homepage--wrapper{
+   
+     
+    
+
+}
+
+.dragon--menu--container{
+    width: 300px;
+  
+}
+
+.dragons--facts--container{
+    
+ 
+   
+    
+}
+
+
+/*nav*/
+
+.mainmenu--container{
+    height: 400px;
+    width: 30%;
+   
+    
+    
 }

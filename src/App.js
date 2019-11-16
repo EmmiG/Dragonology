@@ -36,6 +36,7 @@ function App() {
         
           <div className="homepage--wrapper">
           
+          <div className="dragon--menu--container">
           <Nav />
           <Switch> 
           <Route path="/" exact component={HomePage}/>
@@ -44,6 +45,7 @@ function App() {
           <Route path="/dragontest" component={DragonTest}/>
           <Route path="/fortunecookie" component={FortuneCookie}/>
            </Switch>
+          </div>
           
           <div className="dragons--facts--container">
            <Switch>
