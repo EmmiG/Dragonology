@@ -99,7 +99,7 @@
 .dragon--links--wrapper{
     width: 375px;
     height: 1900px;
-    left: 0;
+    /*tog bort left*/
     
 }
 
@@ -258,7 +258,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: lightblue;
     background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
     background-repeat: no-repeat; 
     background-size: cover;
@@ -288,6 +287,10 @@ nav{
 }
 
 /* contain submenus all 12 dragons, all images and links */
+
+.dragon--list--title{
+    font-size: 24px;
+}
 
 .dragon-links{
     width: 100%;
@@ -354,12 +357,12 @@ nav{
 
 .homepage--title{
     
-      font-size: 18px;
+      font-size: 20px;
     
 }
 
 .what--dragon{
-     font-size: 20px;
+     font-size: 22px;
 }
 
 
@@ -420,6 +423,14 @@ nav{
     height: 100px;
     
 }
+
+
+
+.homepage--stats--text{
+    font-size: 13px;
+}
+
+
 
 
 

@@ -540,7 +540,7 @@ render () {
           <div className="dragon--links--container">
           
         
-        <h1> List of dragons </h1>
+        <h1 className="dragon--list--title"> List of dragons </h1>
           
           <ul className="dragon-links">
             <Link to="/waterdragon">

@@ -54,7 +54,7 @@ render () {
     let HomeStats = this.state.HomepageStats.map((homestats) => {
         return ( 
             
-            <div key={homestats.id}>
+            <div className="homepage--stats--text" key={homestats.id}>
             <div> <h3 className="homepage--title">Description:</h3><span> {homestats.Description}</span></div>
             <div> <h3 className="homepage--title">Purpose:</h3><span> {homestats.Purpose}</span></div>
             <div> <h3 className="homepage--title">Goal:</h3><span> {homestats.Goal}</span></div>

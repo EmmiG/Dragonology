@@ -30,9 +30,12 @@
 
 
 .nav--wrapper{
-   width: 100%;
-   height: 100%;
+   min-width: 1200px;
+   min-height: 100%;
+    height:inherit;
     margin: 0;
+    right: 0;
+    
     
     
 }
@@ -56,6 +59,8 @@ nav{
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin-right: 30px;
+
     
     
     
@@ -63,8 +68,8 @@ nav{
 
 .nav--menu{
     flex-direction: column;
-    margin-right: 90px;
     padding-top: 20px;
+    padding-left: 30px;
      
 }
 
@@ -130,10 +135,14 @@ nav{
 
 /*  Dragon pages */
 
+.dragon--list--title{
+    font-size: 55px;
+}
+
 
 .title{
     /*fixed*/
-    font-size: 24x;
+    font-size: 35px;
 }
 
 .dragon-links--images{
@@ -142,7 +151,7 @@ nav{
 }
 .dragon-links--images img{
     height: 165px;
-    width: 375px;
+    width: 400px;
     padding: 0;
     margin: 0;
     
@@ -233,6 +242,8 @@ nav{
      height: 500px;
      order: 4; /*fixed*/   
     display: inline-block;
+    margin-bottom: 70px;
+    
     
 }
 
@@ -241,7 +252,6 @@ nav{
   margin: 0;
      width: 100%;
   text-align: left;
-  font-size: 20px;
 }
 
 
@@ -273,6 +283,7 @@ nav{
 .mainmenu--container{
     height: 670px;
     width: 25%;
+    
    
     
     
@@ -282,7 +293,8 @@ nav{
 .dragon--links--wrapper{
     display: flex;
     height: 1080px;
-    width: 769px;
+    width: 820px;
+    margin-left: 350px;
    
 
 }
@@ -290,12 +302,64 @@ nav{
 .dragon--links--container{
     height: 1080px;
     
+    
+    
 
 
 }
 
 .homepage--stats--wrapper{
+    
+    margin-left: 150px;
 
    
  
 }
+
+
+
+
+
+/*homepage*/
+
+.dragonology{
+    padding-top: 0;
+}
+
+
+.dragonology img{
+    width: 575px;
+    height: 221px;
+ 
+}
+
+
+
+.homepage--title--dragonology{
+    
+      font-size: 50px;
+    
+}
+
+.homepage--title{
+    
+      font-size: 30px;
+    
+}
+
+.what--dragon{
+     font-size: 35px;
+    padding-bottom: 30px;
+}
+
+
+.homestats--container{
+  
+    
+    width: 60%;
+
+        
+}
+
+
+
