@@ -16,8 +16,21 @@ function DragonTest() {
       
       return (
       
-      <div>
-        <h1> Welcome to Dragon Test Page </h1>
+      <div className="dragontest--wrapper">
+           <div className="dragontest--container">
+                <h1 className="dragontest--title"> Welcome to Dragon Test Page </h1>
+          
+                <p className="dragontest--text"> 
+          Sadly the page is under construction for the moment. Sorry for the inconvenience.  
+                </p>
+                        <div className="under-construction">
+                        {/*bild på draken placeras här*/}
+                            
+                        </div>
+          
+        </div>
+          
+        
           
           
           

@@ -22,11 +22,11 @@ function FortuneCookie () {
      <div className="fortune--wrapper">
      
      <div>
-     <h1>Cave of wonder</h1>
+     <h1 id="cave--wonder--title">Cave of wonder</h1>
      </div>
      
      <div>
-     <h2>Get your fortune today</h2>
+     <h2 id="get--fortune--title">Get your fortune today</h2>
      </div>
      
      <div className="wisedragon--picture">
@@ -34,8 +34,8 @@ function FortuneCookie () {
      </div>
      
      <div className="fortune--cookie--text--container">
-     <h3>  "Welcome young one,Wise dragon here" </h3>
-     <h3>  "Let's see what type of wisdom I can give you today". </h3>
+     <h3 className="fortune--cookie--text--title">  "Welcome young one,Wise dragon here" </h3>
+     <h3 className="fortune--cookie--text--title">  "Let's see what type of wisdom I can give you today". </h3>
      </div>
       <div>   <RandomCookie />  </div>
      </div>

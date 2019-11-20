@@ -66,7 +66,7 @@ nav img {
 }
 
 .nav--menu{
-    padding-left: 40px;
+    padding-left: 70px;
     display: flex;
     flex-direction: row;
 }
@@ -369,5 +369,90 @@ nav img {
 
 
 
+/*Fortune cookie page*/
 
+
+#cave--wonder--title{
+    
+    font-size: 42px;
+    
+}
+
+#get--fortune--title{
+    
+    font-size: 28px;
+    
+}
+     
+  
+     
+
+
+.wisedragon--picture img{
+    width: 318px;
+    height: 377px;
+}
+
+  
+  
+
+.fortune--cookie--text--container{
+    
+  margin: 0px 0px 10px 75px;
+  width: 80%;
+}
+
+.fortune--cookie--text--title{
+    
+    font-size: 20px;
+    
+}
+
+.fortune{
+    height: 100px;
+    min-height: 50px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0px 0px 10px 75px;
+    border: none;
+    
+   
+    
+}
+
+#fortune--text{
+    width: 80%;
+    margin: 0px 0px 0px 50px;
+    
+}
+
+
+#todays--fortune--button{
+    
+    height: 78px;
+    width: 484px; 
+    font-size: 20px;
+}
+
+
+/*Dragon Test*/
+
+
+
+.dragontest--title{
+      font-size: 30px;
+}
+
+.dragontest--text{
+     font-size: 20px;
+    width: 60%;
+}
+
+.under-construction{
+    width: 400px;
+    height: 500px;
+   
+    
+     
+}
 
