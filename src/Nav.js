@@ -132,54 +132,69 @@ this.state.allMenus
 
 clickstatuslogo()
 {
-     this.setState((prevState)=>
-         
-         ({ 
-     Clicklogo: !prevState.Clicklogo
-         
-     })); 
+    this.setState((prevState)=>({
+    Clicklogo: !this.state.Clicklogo, 
+    Clickhome: false,
+    Clickdragons:false,  
+    Clickdragontest: false,
+    Clickfortunecookie: false,
+    Clicklogo: !prevState.Clicklogo
+           
+    }));
 }
 
 clickstatushome()
 {
-     this.setState((prevState)=>
-         
-         ({ 
-     Clickhome: !prevState.Clickhome
-         
-     })); 
+   this.setState((prevState)=>({
+    Clickhome: !this.state.Clickhome, 
+    Clicklogo: false,
+    Clickdragons:false,  
+    Clickdragontest: false,
+    Clickfortunecookie: false,
+    Clickhome: !prevState.Clickhome
+           
+    }));
 }
 
 
 clickstatusdragons()
 {
-    this.setState((prevState)=>
-         
-         ({ 
-     Clickdragons: !prevState.Clickdragons
-         
-     })); 
+    this.setState((prevState)=>({
+    Clickdragons: !this.state.Clickdragons,
+    Clicklogo: false,
+    Clickhome: false,
+    Clickdragontest: false,
+    Clickfortunecookie: false,
+    Clickdragons: !prevState.Clickdragons
+           
+    }));
+    
+    
 }
 
 clickstatusdragontest()
 {
-    this.setState((prevState)=>
-         
-         ({ 
-     Clickdragontest: !prevState.Clickdragontest
-         
-     })); 
-     
+    this.setState((prevState)=>({
+    Clickdragontest: !this.state.Clickdragontest, 
+    Clicklogo: false,
+    Clickhome: false,
+    Clickdragons: false,
+    Clickfortunecookie: false,
+    Clickdragontest: !prevState.Clickdragontest
+    })); 
 }
 
 clickstatusfortunecookie()
 {
-    this.setState((prevState)=>
-         
-         ({ 
-     Clickfortunecookie: !prevState.Clickfortunecookie
-         
-     })); 
+    this.setState((prevState)=>({
+    Clickfortunecookie: !this.state.Clickfortunecookie,
+    Clicklogo: false,
+    Clickhome: false,
+    Clickdragons: false,
+    Clickdragontest: false,
+    Clickfortunecookie: !prevState.Clickfortunecookie
+           
+    }));
      
 }
 

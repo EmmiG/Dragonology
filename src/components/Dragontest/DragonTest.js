@@ -6,8 +6,9 @@
 
 import React from 'react';
 import "./../../App.scss";
+import underconstruction from './../../images/under_construction.jpg';
 
-
+ 
 
 
 function DragonTest() {
@@ -24,7 +25,7 @@ function DragonTest() {
           Sadly the page is under construction for the moment. Sorry for the inconvenience.  
                 </p>
                         <div className="under-construction">
-                        {/*bild på draken placeras här*/}
+                       <img alt="underconstruction" src={underconstruction}  />
                             
                         </div>
           
