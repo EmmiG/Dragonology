@@ -1,74 +1,76 @@
 import React, { Component } from "react";
 import "../App.scss";
 
+
+class allFortunes {
+    id: 0;
+    Fortune: "";
+    
+    
+}  
+
 class Test extends Component {
-  constructor(props) {
+ 
+
+    constructor(props) {
     super(props);
     
       
     this.state = {
-      allMenus: [],
-      picUrl: '../images/Buttons/main_menu_dragons.png;'
+      allFortunes: [],
     };
   }
       
- handleDragonMenuClick = DisplaySubMenu => () => {
-    this.setState({
-      picUrl: DisplaySubMenu
-    });
-  };
 
-  fetchAllMenus = () => {
-    fetch("http://localhost/dragonology/server/fetchMenu.php")
+
+  fetchFortune = () => {
+    fetch("http://localhost/dragonology/server/fetchRandomCookie.php")
       .then(response => response.json())
       .then(data => {
         console.log(data);
-        this.setState({ allMenus: data });
+        this.setState({ allFortunes: data });
       });
   };
 
   componentDidMount() {
-    this.fetchAllMenus();
+    this.fetchFortune();
   }
 
-  renderMenus = () =>
-    this.state.allMenus
-      .filter(menu => menu.parentId !== null)
-      .map(menu => (
-        <div key={menu.id}>
-          <img src={menu.picUrl} alt={menu.picName} />
-        </div>
-      ));
 
-/* If you take away the ! mark the mainMenu will be able to show, but not the subMenu*/
-renderMainMenu = () =>
-    this.state.allMenus
-      .filter(menu => menu.parentId == null)
-      .map(menu => (
-        <div key={menu.id}>
-          <img src={menu.picUrl} alt={menu.picName} />
-        </div>
-      ));
+// generate a random number
+getRandomNumber = () => {
+  const max = Math.ceil(25);
+  const min = Math.floor(1);
 
-   renderSubmenu = () =>
-    this.state.allMenus
-      .filter(menu => menu.parentId === 2)
-      .map(menu => (
-        <div key={menu.id}>
-          <a href={menu.linkUrl}>
-            <img src={menu.picUrl} alt={menu.picName} />
-          </a>
-        </div>
-      ));
+  return Math.floor(Math.random() * (min - max)) + max;
+}
+  
+
+
 
   render() {
+      
+      
+      let renderFortuneCookie = this.state.allFortunes.filter(cookie => cookie.id).map((cookie) => {
+        return ( 
+            
+            <div key={cookie.id}>
+            
+            <span> {cookie.Fortune}</span>
+            
+            </div>)
+    });
+      
+    
+      
+      
     return (
-      <div className="Menu">
-        
-        
-<button onClick={this.handleDragonMenuClick('renderMenus :')}><div>{this.renderMainMenu()}</div></button>
-        <div id="sub_2">{this.renderMenus()}</div>
+   <div>
+      <div className="fortune"><span id="fortune--text">{renderFortuneCookie}</span> </div>
+      <div className="button--container--todays--fortune">
+        <button id="todays--fortune--button" >Today´s Fortune</button>
       </div>
+    </div>
     );
   }
 }

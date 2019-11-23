@@ -39,7 +39,6 @@ constructor(props) {
   }
 
 
-
 renderHome = () =>
 this.state.allMenus
     .filter(menu => menu.id == 1)
@@ -239,10 +238,13 @@ render () {
     
     let logoclick
      if (this.state.Clicklogo) {
-         logoclick = <div> <img alt="logo" src={ logo } /> </div>
+         
+             logoclick = <div><img alt="logoonclick" src={ logoonClick } /> </div>
+         
          
      } else {
-         logoclick = <div><img alt="logoonclick" src={ logoonClick } /> </div>
+     
+             logoclick = <div> <img alt="logo" src={ logo } /> </div>
      }
  
       return (

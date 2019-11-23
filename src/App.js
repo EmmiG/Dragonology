@@ -45,6 +45,7 @@ function App() {
           <Route path="/dragontest" component={DragonTest}/>
           <Route path="/fortunecookie" component={FortuneCookie}/>
            </Switch>
+          {/* end dragon--menu--container div*/} 
           </div>
           
           <div className="dragons--facts--container">
@@ -62,18 +63,17 @@ function App() {
            <Route path="/darkdragon" component={DarkDragon}/>
            <Route path="/metaldragon" component={MetalDragon}/>
           </Switch>
+          {/* end dragons--facts--container div*/} 
            </div>
-         
-          
+          {/* end homepage--wrapper div*/} 
           </div>
+          {/* comment footer */} 
+           
           
-          <div>
-          {/* footer Component */} 
           
-            </div> 
-    
+   
     </div>
-{/* end of the wrapper */}     
+{/* end of the app div*/}     
 </Router>
       
              

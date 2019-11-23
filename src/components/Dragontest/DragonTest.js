@@ -7,6 +7,7 @@
 import React from 'react';
 import "./../../App.scss";
 import underconstruction from './../../images/under_construction.jpg';
+import Test from './../../components/Test'
 
  
 
@@ -32,7 +33,7 @@ function DragonTest() {
         </div>
           
         
-          
+          <Test />
           
           
           
