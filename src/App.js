@@ -70,7 +70,7 @@ function App() {
           {/* comment footer */} 
            
           
-          
+          < Footer />
    
     </div>
 {/* end of the app div*/}     

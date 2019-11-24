@@ -6,7 +6,6 @@
 
 
 .homepage--wrapper{
-    height: 100%;
     width: 100%;
      margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@
 
 .homepage--stats--wrapper{
     
-     height: 100%;
     width: 100%;
      margin: 0;
     padding: 0;
@@ -23,7 +21,6 @@
 
 
 .dragons--facts--container{
-        height: 100%;
     width: 100%;
      margin: 0;
     padding: 0;
@@ -31,12 +28,10 @@
 }
 .nav--wrapper{
     width: 375px;
-    height: 100px;
     left: 0;
 }
 
 .mainmenu--container{
-     height: 100px;
     width: 100%;
     margin: 0;
     padding: 0;  
@@ -98,13 +93,11 @@
 
 .dragon--links--wrapper{
     width: 375px;
-    height: 1900px;
-    /*tog bort left*/
+    
     
 }
 
 .dragon--links--container{
-         height: 1900px;
     width: 100%;
     margin: 0;
     padding: 0;  
@@ -175,7 +168,6 @@
 }
 
 .select-box--container {
-    height: 1900px;
     width: 100%;
     border: 1px solid #aaa;
     width: 100%;
@@ -257,7 +249,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
     background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
     background-repeat: no-repeat; 
     background-size: cover;
@@ -339,6 +330,9 @@ nav{
     text-align: left;
     width: 257px;
     height: 300px;
+    -webkit-user-modify: read-write-plaintext-only; 
+        overflow-wrap: break-word;
+    
         
 }
 
@@ -452,7 +446,6 @@ nav{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100px;
     
 }
 
@@ -469,7 +462,6 @@ nav{
 
  .dragontest--wrapper{
      width: 100%;
-     height: 100%;
      padding: 0;
      margin: 0;
      
@@ -504,5 +496,41 @@ nav{
     background-repeat: round; 
     background-size: cover;
 } 
+
+
+
+.footer-contact-info{
+    background-color: #D7D7D7;
+    width: 110%;
+    height: auto;
+    margin: 0;
+    padding: 1.2em;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    margin-left: -15px;
+    color: #362f2d;
+    align-items: center;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#footer--unorder--list--useful--links{
+    width: 45%;
+    list-style: none;
+}
+
+#footer--unorder--list{
+    width: 45%;
+    list-style: none;
+}
+
+.footer--title{
+    font-weight: bold; 
+}
+
 
 

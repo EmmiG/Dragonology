@@ -38,13 +38,12 @@ nav{
 
 .nav--wrapper{
    min-width: 768px;
-   min-height: 170px;
     
     
 }
 
 .mainmenu--container{
-   height: 30%;
+   
    border: none;
    
 }
@@ -169,7 +168,6 @@ nav img {
 
 /* parent div in any of the dragon pages*/
 .fact--wrapper{
-    height: 100%;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -201,7 +199,6 @@ nav img {
 */
 .stat--container{
  
-   height: 100%;
     width: 30%;
     margin: 0;
     order: 3;
@@ -269,7 +266,7 @@ nav img {
 }
 
 .mainmenu--container{
-    height: 170px;
+    
    
     
     
@@ -355,11 +352,6 @@ nav img {
     
 
 
-}
-
-
-.dragon--menu--container{
-    height: 175px;
 }
 
 
@@ -457,3 +449,10 @@ nav img {
      
 }
 
+.footer-contact-info{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 20px;
+    
+}

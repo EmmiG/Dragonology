@@ -1,50 +1,90 @@
-/*
-* A random Fortune cookie will be displayed
-*/
-
-
-import React, { useState } from "react";
+import React, { Component } from "react";
 import "./../../App.scss";
-import fortunes from "./fortunes.json";
 
 
+class allFortunes {
+    id: 0;
+    Fortune: "";
+    
+    
+}  
+
+class RandomCookie extends Component {
+ 
+
+    constructor(props) {
+    super(props);
+    
+      
+    this.state = {
+      allFortunes: [],
+      fortuneId: undefined,
+    };
+        this.onFortuneClick = this.onFortuneClick.bind(this);
+  }
+      
 
 
-// this would be a network call. just mocking out for demo.
-// random lorem ipsum generated on https://next.json-generator.com/4yP4GV7oP
-function fetchFortune(fortuneId) {
-  return new Promise(res => {
-    const response = { fortune: fortunes[fortuneId] };
-    res(response);
-  });
-}
+  fetchFortune = () => {
+    fetch("http://localhost/dragonology/server/fetchRandomCookie.php")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        this.setState({ allFortunes: data });
+      });
+  };
+
+  componentDidMount() {
+    this.fetchFortune();
+  }
+
 
 // generate a random number
-function getRandomNumber() {
+getRandomNumber = () => {
   const max = Math.ceil(25);
   const min = Math.floor(1);
 
   return Math.floor(Math.random() * (min - max)) + max;
-}
-const RandomFortune = () => {
-  const [fortune, setFortune] = useState("");
-
-  // On click of the fortune generator, we generate a number and then request
-  // the fortune of that id from the backend.
-  const generateFortune = () => {
-    const id = getRandomNumber();
-
-    fetchFortune(id).then(response => setFortune(response.fortune));
-  };
-
-  return (
-    <div>
-      <div className="fortune"><p id="fortune--text">{fortune}</p> </div>
-      <div className="button--container--todays--fortune">
-        <button id="todays--fortune--button" onClick={generateFortune}>Today´s Fortune</button>
-      </div>
-    </div>
-  );
 };
 
-export default RandomFortune;
+onFortuneClick(){
+    const fortuneId = this.getRandomNumber();
+    this.setState ({ fortuneId: String(fortuneId) });
+    
+}
+  
+  
+
+  render() {
+    
+      const fortuneId = this.state.fortuneId;
+      
+      let renderFortuneCookie = this.state.allFortunes.filter(cookie => cookie.id === fortuneId).map((cookie) => {
+          
+          
+        return ( 
+            
+            <div key={cookie.id}>
+            
+            <span> {cookie.Fortune}</span>
+            
+            </div>)
+    });
+      
+    
+      
+      
+    return (
+   <div>
+      <div className="fortune"><span id="fortune--text">{renderFortuneCookie}</span> </div>
+      <div className="button--container--todays--fortune">
+        <button id="todays--fortune--button" onClick={this.onFortuneClick} >Today´s Fortune</button>
+      </div>
+    </div>
+    );
+  }
+}
+
+export default RandomCookie;
+
+
