@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './sass/style.scss';
-import SelectBox from './features/select-box/index';
-
 
 import Nav from './Nav';
 
@@ -36,35 +34,35 @@ function App() {
         
           <div className="homepage--wrapper">
           
-          <div className="dragon--menu--container">
-          <Nav />
-          <Switch> 
-          <Route path="/" exact component={HomePage}/>
-          <Route path="/homepage" exact component={HomePage}/>
-          <Route path="/dragons" component={Dragons}/>
-          <Route path="/dragontest" component={DragonTest}/>
-          <Route path="/fortunecookie" component={FortuneCookie}/>
-           </Switch>
-          {/* end dragon--menu--container div*/} 
-          </div>
-          
-          <div className="dragons--facts--container">
-           <Switch>
-           <Route path="/waterdragon" component={WaterDragon}/>
-           <Route path="/wooddragon" component={WoodDragon}/>
-           <Route path="/brassdragon" component={BrassDragon}/>
-           <Route path="/firedragon" component={FireDragon}/>
-           <Route path="/forestdragon" component={ForestDragon}/>
-           <Route path="/lightningdragon" component={LightningDragon}/>
-           <Route path="/icedragon" component={IceDragon}/>
-           <Route path="/earthdragon" component={EarthDragon}/>
-           <Route path="/lightdragon" component={LightDragon}/>
-           <Route path="/bronzedragon" component={BronzeDragon}/>
-           <Route path="/darkdragon" component={DarkDragon}/>
-           <Route path="/metaldragon" component={MetalDragon}/>
-          </Switch>
-          {/* end dragons--facts--container div*/} 
-           </div>
+              <div className="dragon--menu--container">
+              <Nav />
+              <Switch> 
+              <Route path="/" exact component={HomePage}/>
+              <Route path="/homepage" exact component={HomePage}/>
+              <Route path="/dragons" component={Dragons}/>
+              <Route path="/dragontest" component={DragonTest}/>
+              <Route path="/fortunecookie" component={FortuneCookie}/>
+               </Switch>
+              {/* end dragon--menu--container div*/} 
+              </div>
+
+              <div className="dragons--facts--container">
+               <Switch>
+               <Route path="/waterdragon" component={WaterDragon}/>
+               <Route path="/wooddragon" component={WoodDragon}/>
+               <Route path="/brassdragon" component={BrassDragon}/>
+               <Route path="/firedragon" component={FireDragon}/>
+               <Route path="/forestdragon" component={ForestDragon}/>
+               <Route path="/lightningdragon" component={LightningDragon}/>
+               <Route path="/icedragon" component={IceDragon}/>
+               <Route path="/earthdragon" component={EarthDragon}/>
+               <Route path="/lightdragon" component={LightDragon}/>
+               <Route path="/bronzedragon" component={BronzeDragon}/>
+               <Route path="/darkdragon" component={DarkDragon}/>
+               <Route path="/metaldragon" component={MetalDragon}/>
+              </Switch>
+              {/* end dragons--facts--container div*/} 
+               </div>
           {/* end homepage--wrapper div*/} 
           </div>
           {/* comment footer */} 

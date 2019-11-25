@@ -1,5 +1,5 @@
 <?php
-    /* This file fetches current dragons and name of the dragons. */
+    /* This file fetches all the data from the homepage table and order the data by Description */
     include_once 'database.php';
     $statement = $pdo->prepare("SELECT * FROM homepage ORDER BY Description ASC");
     $statement->execute();

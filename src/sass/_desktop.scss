@@ -1,70 +1,12 @@
+/* All Components in App.js */
 
-.logo--background{
-    height: 145px;
-    width: 217px;
-    align-items: center;
+.dragon--menu--container{
+    width: 100%;
+    height: inherit;
 }
 
 
-
-#logo{
-   display: inline-block;
-    align-items: center;
-      height: 112px;
-    width: 165px;
-}
-
-
-#logo img{
-    height: 112px;
-    width: 165px;
-    margin: 17px 0px 0px 0px;
-}
-
-
-
-.nav--wrapper{
-   min-width: 1200px;
-    margin: 0;
-    right: 0;
-    height: 10px;
-    
-}
-
-nav{
-    
-    order: 1; /*fixed*/
-    justify-content: none;
-      background-image: none;
-     padding: 0;
-    width: 25%;
-    position: absolute;
-    
-    
-  
-}
-
-
-
-.nav-links{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-right: 30px;
-
-    
-    
-    
-}
-
-.nav--menu{
-    flex-direction: column;
-    padding-top: 20px;
-    padding-left: 30px;
-     
-}
-
-
+/* Nav Mainmenu functions */
 
 .select-box--home{
     
@@ -122,19 +64,129 @@ nav{
    
 }
 
+/* Nav */
 
+.nav--wrapper{
+   min-width: 1200px;
+    margin: 0;
+    right: 0;
+    height: 10px;
+    
+}
 
-/*  Dragon pages */
+.mainmenu--container{
+    height: 670px;
+    width: 25%;
+       
+    
+}
 
-.dragon--list--title{
-    font-size: 55px;
+nav{
+    
+    order: 1; /*fixed*/
+    justify-content: none;
+      background-image: none;
+     padding: 0;
+    width: 25%;
+    position: absolute;
+    
+    
+  
 }
 
 
-.title{
-    /*fixed*/
-    font-size: 35px;
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-right: 30px; 
 }
+
+
+
+.logo--background{
+    height: 145px;
+    width: 217px;
+    align-items: center;
+}
+
+
+
+#logo{
+   display: inline-block;
+    align-items: center;
+      height: 112px;
+    width: 165px;
+}
+
+
+#logo img{
+    height: 112px;
+    width: 165px;
+    margin: 17px 0px 0px 0px;
+}
+
+
+
+.nav--menu{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+     
+}
+
+
+/* Homepage */
+
+.homepage--title{
+    
+      font-size: 30px;
+    
+}
+
+.homepage--stats--wrapper{
+    
+    width: 90%;
+    margin-left: 100px;
+ 
+}
+
+.dragonology{
+    padding-top: 0;
+}
+
+
+.dragonology img{
+    width: 575px;
+    height: 221px;
+ 
+}
+
+.homepage--title--dragonology{
+    
+      font-size: 50px;
+    
+}
+
+
+
+.what--dragon{
+     font-size: 35px;
+    padding-bottom: 30px;
+}
+
+
+.homestats--container{
+  
+    
+    width: 60%;
+
+        
+}
+
+
+/* Dragon list Submenu functions */
 
 .dragon-links--images{
      padding: 0;
@@ -148,6 +200,17 @@ nav{
     
 }
 
+/* Dragons */
+
+.dragon--links--wrapper{
+    display: flex;
+    width: 820px;
+    margin-left: 350px;
+}
+
+.dragon--list--title{
+    font-size: 55px;
+}
 
 .dragon-links{
     width: 100%;
@@ -159,21 +222,28 @@ nav{
     padding: 0px 0px 0px 10px;
 }
 
+/* Each dragon page */
 
+.parchment--text{
+    
+  margin: 0;
+     width: 100%;
+  text-align: left;
+}
 
+.title{
+    /*fixed*/
+    font-size: 35px;
+}
 
-/* parent div in any of the dragon pages*/
 .fact--wrapper{
     width: 100%;
     padding-right: 200px;
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
-  
-    
+    flex-direction: row;  
 }
 
-/* child div in any of the dragon pages */
 .dragonhead{
     /*fixed*/
     display: flex;
@@ -194,10 +264,6 @@ nav{
     margin: 0;
 }
 
-/* child div in any of the dragon pages 
-* that contains all the stats and 
-* the stat--paragraph div
-*/
 .stat--container{
     display: flex; /*fixed*/
    height: 500px; /*fixed*/
@@ -216,16 +282,10 @@ nav{
   text-align: left;
     width: 90%;
     height: 450px; /*fixed*/
-    font-size: 24px; /*fixed*/ 
-    
-    
+    font-size: 24px; /*fixed*/  
     
 }
 
-/* child div in any of the dragon pages 
-* that contains all the facts and 
-* the parchment--text div 
-*/
 .fact--container{
     overflow-y: scroll;
       width: 67%;
@@ -233,129 +293,34 @@ nav{
      order: 4; /*fixed*/   
     display: inline-block;
     margin-bottom: 70px;
-    margin-right: 15px;
-    
-    
+    margin-right: 15px; 
 }
 
-.parchment--text{
+/* DragonTest */
+
+.dragontest--container{
     
-  margin: 0;
-     width: 100%;
-  text-align: left;
-}
-
-
-
-
-
-.homepage--wrapper{
-
-}
-
-.dragon--menu--container{
-    width: 100%;
-    height: inherit;
-    
-  
-}
-
-.dragons--facts--container{
-   
-    
- 
-   
-    
-}
-
-
-/*nav*/
-
-.mainmenu--container{
-    height: 670px;
-    width: 25%;
-    
-   
-    
-    
-}
-
-
-.dragon--links--wrapper{
-    display: flex;
-    width: 820px;
-    margin-left: 350px;
-   
-
-}
-
-.dragon--links--container{
-   
-    
-    
-    
-
-
-}
-
-.homepage--stats--wrapper{
-    
-    width: 90%;
-    margin-left: 100px;
-
-   
- 
+  width: 90%;
+    margin-left: 100px; 
 }
 
 
 
-
-
-/*homepage*/
-
-.dragonology{
-    padding-top: 0;
+.dragontest--title{
+      font-size: 45px;
 }
 
-
-.dragonology img{
-    width: 575px;
-    height: 221px;
- 
+.dragontest--text{
+    font-size: 25px;
+    width: 50%;
 }
 
-
-
-.homepage--title--dragonology{
-    
-      font-size: 50px;
-    
+.under-construction{
+    width: 70%;
+    height: 700px;  
 }
 
-.homepage--title{
-    
-      font-size: 30px;
-    
-}
-
-.what--dragon{
-     font-size: 35px;
-    padding-bottom: 30px;
-}
-
-
-.homestats--container{
-  
-    
-    width: 60%;
-
-        
-}
-
-
-
-/*Fortune cookie page*/
-
+/* Fortune Cookie */
 
 #cave--wonder--title{
     
@@ -368,18 +333,11 @@ nav{
     font-size: 40px;
     
 }
-     
-  
-     
-
 
 .wisedragon--picture img{
     width: 498px;
     height: 432px;
 }
-
-  
-  
 
 .fortune--cookie--text--container{
     
@@ -392,13 +350,12 @@ nav{
     font-size: 30px;
     
 }
+/* Random Cookie */
 
 .fortune{
     height: 120px;
     font-size: 20px;
-    margin: 0px 0px 10px 135px;
-    
-   
+    margin: 0px 0px 10px 135px; 
     
 }
 
@@ -416,56 +373,41 @@ nav{
     font-size: 28px;
 }
 
-/*Dragon Test*/
-
-.dragontest--container{
-    
-  width: 90%;
-    margin-left: 100px;
-    
-    
-}
- 
-
-.dragontest--title{
-      font-size: 45px;
-}
-
-.dragontest--text{
-    font-size: 25px;
-    width: 50%;
-}
-
-.under-construction{
-    width: 70%;
-    height: 700px;
-   
-    
-     
-}
-
-
-
-
+/* Footer */
 
 .footer-contact-info{
-    
     width: 100%;
-   font-size: 22px;
-    
-    
+   font-size: 22px; 
 }
 
 #footer--unorder--list--useful--links{
-    width: 30%;
-     
+    width: 30%;  
 }
 
 #footer--unorder--list{
-  
-    width: 30%;
-    
+    width: 30%; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

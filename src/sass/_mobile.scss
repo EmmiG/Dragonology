@@ -1,134 +1,33 @@
 
-
-#logo{
-   display: none;
-}
-
-
-.homepage--wrapper{
-    width: 100%;
-     margin: 0;
-    padding: 0;
-
-}
-
-.homepage--stats--wrapper{
-    
-    width: 100%;
-     margin: 0;
-    padding: 0;
-}
-
-
-.dragons--facts--container{
-    width: 100%;
-     margin: 0;
-    padding: 0;
-    
-}
-.nav--wrapper{
-    width: 375px;
-    left: 0;
-}
-
-.mainmenu--container{
-    width: 100%;
-    margin: 0;
-    padding: 0;  
-    
-    
-}
+/* Effect all the different components */
 
 * {
     box-sizing: border-box;
 }
 
+/* All Components in App.js */
 
-.select-box--home img{
-    
-     height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
-}
-
-.select-box--dragons img{
-    
-    height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
-}
-
-.select-box--test img{
-    
-     height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
-}
-
-.select-box--cookie img{
-    
-    height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
-}
-
-
-.submenu img{
-    /*delete*/
-    
-    height: 125px;
-    width: 320px;
-    padding: 0;
-    margin: 0;
-   
-}
-
-.dragon--links--wrapper{
-    width: 375px;
-    
-    
-}
-
-.dragon--links--container{
+.homepage--wrapper{
     width: 100%;
     margin: 0;
-    padding: 0;  
-}
-
-
-.dragon-links--images {
-
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0px 42px 0px 0px;
-    
-    
-}
-
-.dragon-links--images img{
-    height: 165px;
-    width: 375px;
     padding: 0;
+
+}
+
+.dragon--menu--container{
     margin: 0;
+    padding: 0;
+    width: 100%;
     
 }
 
-
-.select-box--box {
-    width: 375px;
-    height: 80px;
-    position: absolute;
-    left: 0;
+.dragons--facts--container{
+    width: 100%;
+     margin: 0;
+    padding: 0; 
 }
+
+/* Nav Mainmenu functions */
 
 .select-box--home {
     display: inline-block;
@@ -167,13 +66,232 @@
     vertical-align: middle;    
 }
 
-.select-box--container {
-    width: 100%;
-    border: 1px solid #aaa;
+.select-box--home img{
+    
+     height: 60px;
+    width: 93px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.select-box--dragons img{
+    
+    height: 60px;
+    width: 93px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.select-box--test img{
+    
+     height: 60px;
+    width: 93px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.select-box--cookie img{
+    
+    height: 60px;
+    width: 93px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+/* Nav */
+
+
+.nav--wrapper{
+    width: 375px;
+    left: 0;
+}
+
+.mainmenu--container{
     width: 100%;
     margin: 0;
-    padding: 0;   
+    padding: 0;    
     
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+    padding: 0;
+       
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 4px 12px 0px 12px;
+    
+}
+
+#logo{
+   display: none;
+}
+
+.nav--menu{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Homepage */
+
+.homepage--stats--text{
+    font-size: 13px;
+}
+
+.homepage--title{
+    
+      font-size: 20px;
+    
+}
+
+.homepage--stats--wrapper{
+    
+    width: 100%;
+     margin: 0;
+    padding: 0;
+}
+
+.dragonology{
+    display: flex;
+    display:inline-block;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.dragonology img{
+    width: 257px;
+    height: 162px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+ 
+}
+
+.homepage--title--dragonology{
+    
+      font-size: 30px;
+    
+}
+
+
+.what--dragon{
+     font-size: 22px;
+}
+
+.homestats--container{
+    display:inline-block;
+    align-items: center;
+    text-align: left;
+    width: 257px;
+    height: 300px;
+    -webkit-user-modify: read-write-plaintext-only; 
+        overflow-wrap: break-word;
+          
+}
+
+/* Dragon list Submenu functions */
+
+.dragon-links--images {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0px 42px 0px 0px;
+    
+    
+}
+
+.dragon-links--images img{
+    height: 165px;
+    width: 375px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/* Dragons */
+
+.dragon--links--wrapper{
+    width: 375px;
+       
+}
+
+.dragon--links--container{
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+}
+
+
+.dragon--list--title{
+    font-size: 24px;
+}
+
+.dragon-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+
+/* Each dragon page */
+
+.bold{
+   font-weight: bold; 
+    
+}
+
+.parchment--text{
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  text-align: left;
+  font-size: 13px;
+    
+}
+
+.title{
+    color:#5facff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dragonhead{
+    display: inline-block;
+    padding-top: 70px;
+    
+    
+}
+
+.dragonhead img{
+    display: flex;
+    width: 260px;
+    height: 205px;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 0;
 }
 
 .stat--container{
@@ -193,285 +311,27 @@
     
 }
 
-.parchment--text{
-  margin: auto;
-  width: 90%;
-  padding: 10px;
-  text-align: left;
-  font-size: 13px;
-    
-}
-
-
-.select-box--selected-item {
-    display: inline-block;
-    height: 80px;
-    width: 375px;
-    padding: 4px 12px 0px 0px;
-    vertical-align: middle;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
-    
-}
-
-.select-box--items div {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    padding: 6px;
-    padding-left: 20px;
-    padding-top: 40px;
-    height: 150px;
-    width: 320px;
-    
-}
-
-
-
-.title{
-    color:#5facff;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.bold{
-   font-weight: bold; 
-    
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
-    background-repeat: no-repeat; 
-    background-size: cover;
-    color: white;
-    padding: 0;
-      
-    
-}
-
-/* contain home,dragons,dragon test and fortune cookie, all mainmenu all images and links */
-
-.nav-links{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 4px 12px 0px 12px;
-    
-}
-
-
-.nav--menu{
-    display: flex;
-    flex-direction: row;
-}
-
-/* contain submenus all 12 dragons, all images and links */
-
-.dragon--list--title{
-    font-size: 24px;
-}
-
-.dragon-links{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-}
-
-
-.dragonhead{
-    display: inline-block;
-    padding-top: 70px;
-    
-    
-}
-
-.dragonhead img{
-    display: flex;
-    width: 260px;
-    height: 205px;
-    align-items: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    padding: 0;
-}
-
-.dragonology{
-    display: flex;
-    display:inline-block;
-    align-items: center;
-    padding-top: 50px;
-}
-
-.dragonology img{
-    width: 257px;
-    height: 162px;
-    background-repeat: no-repeat; 
-    background-size: cover;
- 
-}
-
-
-.homestats--container{
-    display:inline-block;
-    align-items: center;
-    text-align: left;
-    width: 257px;
-    height: 300px;
-    -webkit-user-modify: read-write-plaintext-only; 
-        overflow-wrap: break-word;
-    
-        
-}
-
 .fact--container{
 -webkit-user-modify: read-write-plaintext-only;  
     margin: 0;
     padding: 0;
 }
 
-.homepage--title--dragonology{
-    
-      font-size: 30px;
-    
-}
 
-.homepage--title{
-    
-      font-size: 20px;
-    
-}
-
-.what--dragon{
-     font-size: 22px;
-}
-
-/*hover for all the dragon links*/
-
-#water:hover {
-        background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
-    
-  }
-
-
-
-
-
-/*Fortune cookie page*/
-
-.wisedragon--picture{
-    display:inline-block;
-    padding-top: 10px;
-    
-    
-}
-
-.wisedragon--picture img{
-    width: 260px;
-    height: 205px;
-    align-items: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    padding: 0;
-    margin-bottom: 40px;
-}
-
-.fortune--cookie--text--container{
-    
-  margin: 0px 0px 10px 7px;
-  width: 96%;
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: center;
-  background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
-  background-repeat: round; 
-  background-size: cover;
-}
-
-.fortune{
-    height: 100px;
-    min-height: 50px;
-    background: lightblue;
-    font-size: 13px;
-    width: 96%;
-      margin: 0px 0px 10px 7px;
-    border: 1px solid #000;
-    padding: 10px;
-    background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
-    background-repeat: round; 
-    background-size: cover;
-    
-}
-
-#fortune--text{
-    margin: 5px;
-    
-}
-
-.button--container--todays--fortune{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#todays--fortune--button{
-    
-    height: 40px;
-    width: 140px;
-    border-radius: 8px;
-    border: none;
-    font-size: 13px;
-    cursor: pointer;
- 
-    
-}
-
-#todays--fortune--button:hover {
-        background-color: #445b65;
-        color: white;
-  }
-
-.dragon--menu--container{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    
-}
-
-
-
-.homepage--stats--text{
-    font-size: 13px;
-}
-
-
-
-/*Dragon Test*/
-
+/* DragonTest */
 
  .dragontest--wrapper{
      width: 100%;
      padding: 0;
-     margin: 0;
-     
+     margin: 0;  
 }
+
+
 .dragontest--container{
     
   align-items: center;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
     
 }
 
@@ -498,6 +358,76 @@ nav{
 } 
 
 
+/* Fortune Cookie */
+
+.wisedragon--picture{
+    display:inline-block;
+    padding-top: 10px; 
+}
+
+.wisedragon--picture img{
+    width: 260px;
+    height: 205px;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.fortune--cookie--text--container{
+    
+  margin: 0px 0px 10px 7px;
+  width: 96%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
+  background-repeat: round; 
+  background-size: cover;
+}
+
+/* Random Cookie */
+
+.fortune{
+    height: 110px;
+    min-height: 50px;
+    background: lightblue;
+    font-size: 13px;
+    width: 96%;
+      margin: 0px 0px 10px 7px;
+    padding: 20px;
+    background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
+    background-repeat: round; 
+    background-size: cover;
+    
+}
+
+.button--container--todays--fortune{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#todays--fortune--button{
+    
+    height: 40px;
+    width: 140px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+ 
+    
+}
+
+#todays--fortune--button:hover {
+        background-color: #445b65;
+        color: white;
+  }
+
+
+/* Footer */
+
 
 .footer-contact-info{
     background-color: #D7D7D7;
@@ -523,14 +453,11 @@ nav{
     list-style: none;
 }
 
-#footer--unorder--list{
-    width: 45%;
-    list-style: none;
-}
-
 .footer--title{
     font-weight: bold; 
 }
 
-
-
+#footer--unorder--list{
+    width: 45%;
+    list-style: none;
+}
