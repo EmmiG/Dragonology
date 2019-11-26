@@ -4,167 +4,116 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+    width: 20px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b30000; 
-  border-radius: 10px;
+    background: #b30000; 
+    border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: aqua; 
+    background: aqua; 
 }
-
-
-
-/* All Components in App.js */
-
-
-
-
 
 /* Nav Mainmenu functions */
 
 #home {
     display: none;
-
 }
 
 .select-box--home{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px;   
 }
 
 .select-box--dragons{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px;
 }
 
 .select-box--test{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px;
 }
 
 .select-box--cookie{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px;
 }
 
 .select-box--home img{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px;
 }
 
 .select-box--dragons img{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px; 
 }
 
 .select-box--test img{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px;
 }
 
 .select-box--cookie img{
-    
-    height: 128px;
     width: 167px;
-   
+    height: 128px; 
 }
 
 /* Nav */
 
 .nav--wrapper{
-   min-width: 768px;
-    
-    
-}
-
-.mainmenu--container{
-   
-   border: none;
-   
+    min-width: 768px;  
 }
 
 nav{
     background-image: none;
 }
 
-
-
 nav img {
-
-    min-height: 10px;
-    min-width: 30px;        
-    
+    min-width: 30px;
+    min-height: 10px;  
 }
-
 
 .nav-links{
-    display: flex;
-    justify-content:flex-start;
     padding: 4px 26px 0px 12px;
-    
-    
+    justify-content:flex-start;   
 }
-
 
 .logo--background{
-        background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
-    background-repeat: round; 
-    background-size: cover;
-   height: 95px;
-   width: 130px;
+    width: 130px;
+    height: 95px;
     margin-left: 30px;
+    background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
+    background-repeat: round; 
+    background-size: cover; 
 }
-
-
 
 #logo{
-   display: inline-block;
-   height: 97px;
-   width: 120px;
- 
-   
+    width: 120px;
+    height: 97px;
+    display: inline-block;   
 }
 
-
 #logo img{
-    height: 73px;
     width: 100px;
+    height: 73px;
     margin: 10px 10px;
 }
 
-
 .nav--menu{
     padding-left: 70px;
-    display: flex;
-    flex-direction: row;
 }
-
 
 /* Homepage */
 
@@ -173,112 +122,76 @@ nav img {
 }
 
 .homepage--title{
-    
-      font-size: 30px;
-    
+    font-size: 30px;
 }
 
 .homepage--stats--wrapper{
     display: inline-block;
-    margin: 0;
-   
- 
 }
 
 .dragonology img{
     width: 603px;
     height: 186px;
- 
 }
-
-
 
 .homepage--title--dragonology{
-    
-      font-size: 50px;
-    
+    font-size: 50px;
 }
 
-
 .what--dragon{
-     font-size: 35px;
+    font-size: 35px;
     padding-bottom: 30px;
 }
 
 .homestats--container{
-    overflow-y: scroll;
-    
     width: 75%;
     height: 600px;
-    margin: 0;
-    padding: 0;
-        
+    overflow-y: scroll;     
 }
+
 /* Dragon list Submenu functions */
 
 .dragon-links--images{
-     padding: 0;
     margin: 0;
+    padding: 0; 
 }
-.dragon-links--images img{
-    height: 165px;
-    width: 375px;
-    padding: 0;
-    margin: 0;
-    
-}
-
 
 /* Dragons */
 
 .dragon--links--wrapper{
-    width: 768px; 
-    
+    width: 768px;   
 }
 
 .dragon--list--title{
     font-size: 40px;
 }
 
-
 .dragon-links{
-    width: 100%;
-    display: flex;
-    align-items:flex-start;
-    list-style: none;
-     flex-direction: row;
-    flex-wrap: wrap;
     padding: 0px 0px 0px 10px;
+    align-items:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
-
 
 /* Each dragon page */
 
 .parchment--text{
-    
-  margin: 0;
-     width: 100%;
-  text-align: left;
-  font-size: 20px;
-   
+    width: 100%;
+    margin: 0;
+    font-size: 20px; 
 }
 
 .title{
-    
     font-size: 25px;
 }
 
 .dragonhead{
     width: 30%;
     height: 350px;
+    margin: 0;
     padding-left: 20px;
     padding-top: 20px;
-    margin: 0;
-    order: 1;
     border-right: 1px solid #000;
-   
-    
 }
 
 .dragonhead img{
@@ -288,78 +201,59 @@ nav img {
 }
 
 .stat--container{
- 
     width: 30%;
-    margin: 0;
-    order: 3;
-    position: absolute;
     padding-top: 350px;
+    position: absolute;
+    order: 3;
 }
 
 .stat--paragraph{
-  margin: auto;
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: left;
     width: 100%;
     height: 400px;
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
 
 .fact--wrapper{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    
 }
 
 .fact--container{
-    overflow-y: scroll;
-      padding-top: 20px;
-      width: 67%;
-     height: 750px;
-     order: 2;
+    width: 67%;
+    height: 750px;
+    padding-top: 20px;
     padding-left: 25px;   
     background-image:url('../images/BackgroundSrc/parchment_dark.png');
     background-repeat:round;
     background-size: cover;
+    overflow-y: scroll;
+    order: 2;
 }
 
 /* DragonTest */
 
 .dragontest--title{
-      font-size: 40px;
+    font-size: 40px;
 }
 
 .dragontest--text{
-     font-size: 28px;
     width: 70%;
+    font-size: 28px;  
 }
-
 
 .under-construction img{
-  
-    height: 500px;
-   
-    
-     
+    height: 500px;   
 }
-
-
 
 /* Fortune Cookie */
 
 #cave--wonder--title{
-    
-    font-size: 42px;
-    
+    font-size: 42px; 
 }
 
 #get--fortune--title{
-    
-    font-size: 28px;
-    
+    font-size: 28px; 
 }
 
 .wisedragon--picture img{
@@ -368,52 +262,39 @@ nav img {
 }
 
 .fortune--cookie--text--container{
-    
-  margin: 0px 0px 10px 75px;
-  width: 80%;
+    width: 80%;
+    margin: 0px 0px 10px 75px;
 }
 
 .fortune--cookie--text--title{
-    
     font-size: 20px;
-    
 }
 
 /* Random Cookie */
 
 .fortune{
-    height: 120px;
-    min-height: 50px;
-    font-size: 16px;
     width: 80%;
+    height: 120px;
     margin: 0px 0px 10px 75px;
     padding: 8px; 
-    
+    font-size: 16px;  
 }
 
 #fortune--text{
     width: 80%;
-    margin: 10px 0px 0px 50px;
-    
+    margin: 10px 0px 0px 50px; 
 }
-
 
 #todays--fortune--button{
-    
+    width: 484px;
     height: 78px;
-    width: 484px; 
     font-size: 20px;
 }
-
-
 
 /* Footer */
 
 .footer-contact-info{
     display: flex;
     justify-content: center;
-    text-align: left;
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
-

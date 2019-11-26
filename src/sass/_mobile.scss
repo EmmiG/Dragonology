@@ -15,15 +15,14 @@
 }
 
 .dragon--menu--container{
-    margin: 0;
-    padding: 0;
     width: 100%;
-    
+    margin: 0;
+    padding: 0;  
 }
 
 .dragons--facts--container{
     width: 100%;
-     margin: 0;
+    margin: 0;
     padding: 0; 
 }
 
@@ -31,29 +30,26 @@
 
 .select-box--home {
     display: inline-block;
-     height: 60px;
+    height: 60px;
     width: 93px;
     padding: 4px 12px 0px 0px;
     vertical-align: middle; 
-    margin: 0;
 }
 
 .select-box--dragons {
     display: inline-block;
-     height: 60px;
+    height: 60px;
     width: 93px;
     padding: 4px 12px 0px 0px;
     vertical-align: middle;  
-    margin: 0;
 }
 
 .select-box--test {
     display: inline-block;
-      height: 60px;
+    height: 60px;
     width: 93px;
     padding: 4px 12px 0px 0px;
     vertical-align: middle;  
-   
 }
 
 .select-box--cookie {
@@ -61,49 +57,32 @@
     height: 60px;
     width: 93px;
     padding: 4px 12px 0px 0px;
-    
-
     vertical-align: middle;    
 }
 
 .select-box--home img{
-    
-     height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
+    height: 60px;
+    width: 93px;  
 }
 
 .select-box--dragons img{
-    
     height: 60px;
     width: 93px;
     padding: 0;
-    margin: 0;
-   
+    margin: 0; 
 }
 
 .select-box--test img{
-    
-     height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
+    height: 60px;
+    width: 93px;  
 }
 
 .select-box--cookie img{
-    
     height: 60px;
-    width: 93px;
-    padding: 0;
-    margin: 0;
-   
+    width: 93px;  
 }
 
 /* Nav */
-
 
 .nav--wrapper{
     width: 375px;
@@ -113,8 +92,7 @@
 .mainmenu--container{
     width: 100%;
     margin: 0;
-    padding: 0;    
-    
+    padding: 0;     
 }
 
 nav{
@@ -124,9 +102,7 @@ nav{
     background-image:url('../images/BackgroundSrc/dragonscales_homepage.png');
     background-repeat: no-repeat; 
     background-size: cover;
-    color: white;
-    padding: 0;
-       
+    padding: 0;      
 }
 
 .nav-links{
@@ -135,20 +111,17 @@ nav{
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding: 4px 12px 0px 12px;
-    
+    padding: 4px 12px 0px 12px;  
 }
 
 #logo{
-   display: none;
+    display: none;
 }
 
 .nav--menu{
     display: flex;
     flex-direction: row;
 }
-
-
 
 /* Homepage */
 
@@ -157,20 +130,16 @@ nav{
 }
 
 .homepage--title{
-    
-      font-size: 20px;
-    
+    font-size: 20px; 
 }
 
 .homepage--stats--wrapper{
-    
     width: 100%;
-     margin: 0;
+    margin: 0;
     padding: 0;
 }
 
 .dragonology{
-    display: flex;
     display:inline-block;
     align-items: center;
     padding-top: 50px;
@@ -181,57 +150,48 @@ nav{
     height: 162px;
     background-repeat: no-repeat; 
     background-size: cover;
- 
 }
 
 .homepage--title--dragonology{
-    
-      font-size: 30px;
-    
+    font-size: 30px;
 }
-
 
 .what--dragon{
      font-size: 22px;
 }
 
 .homestats--container{
+    width: 257px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
     display:inline-block;
     align-items: center;
     text-align: left;
-    width: 257px;
-    height: 300px;
-    -webkit-user-modify: read-write-plaintext-only; 
-        overflow-wrap: break-word;
-          
+    overflow-wrap: break-word;
+    -webkit-user-modify: read-write-plaintext-only;            
 }
 
 /* Dragon list Submenu functions */
 
 .dragon-links--images {
-
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 0px 42px 0px 0px;
-    
-    
+    padding: 0px 42px 0px 0px;    
 }
 
 .dragon-links--images img{
-    height: 165px;
     width: 375px;
+    height: 165px;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
 }
-
 
 /* Dragons */
 
 .dragon--links--wrapper{
-    width: 375px;
-       
+    width: 375px;      
 }
 
 .dragon--links--container{
@@ -239,7 +199,6 @@ nav{
     margin: 0;
     padding: 0;  
 }
-
 
 .dragon--list--title{
     font-size: 24px;
@@ -253,21 +212,18 @@ nav{
     list-style: none;
 }
 
-
 /* Each dragon page */
 
 .bold{
-   font-weight: bold; 
-    
+   font-weight: bold;   
 }
 
 .parchment--text{
-  margin: auto;
-  width: 90%;
-  padding: 10px;
-  text-align: left;
-  font-size: 13px;
-    
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    font-size: 13px; 
 }
 
 .title{
@@ -279,15 +235,13 @@ nav{
 
 .dragonhead{
     display: inline-block;
-    padding-top: 70px;
-    
-    
+    padding-top: 70px; 
 }
 
 .dragonhead img{
-    display: flex;
     width: 260px;
     height: 205px;
+    display: flex;
     align-items: center;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -295,28 +249,25 @@ nav{
 }
 
 .stat--container{
+    height: 260px;
     padding-top: 30px;
     margin: 0;
-    height: 260px;
     align-items: center;
-
 }
 
 .stat--paragraph{
-  margin: auto;
-  width: 70%;
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: left;
-    
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000;   
 }
 
 .fact--container{
--webkit-user-modify: read-write-plaintext-only;  
     margin: 0;
     padding: 0;
+    -webkit-user-modify: read-write-plaintext-only;
 }
-
 
 /* DragonTest */
 
@@ -326,23 +277,20 @@ nav{
      margin: 0;  
 }
 
-
 .dragontest--container{
-    
-  align-items: center;
+    align-items: center;
     display: flex;
-    flex-direction: column;  
-    
+    flex-direction: column;    
 }
 
 .dragontest--title{
-      font-size: 20px;
+    font-size: 20px;
 }
 
 .dragontest--text{
-     font-size: 16px;
     width: 80%;
     padding-bottom: 30px;
+    font-size: 16px;
 }
 
 .under-construction{
@@ -357,7 +305,6 @@ nav{
     background-size: cover;
 } 
 
-
 /* Fortune Cookie */
 
 .wisedragon--picture{
@@ -368,39 +315,37 @@ nav{
 .wisedragon--picture img{
     width: 260px;
     height: 205px;
+    margin-bottom: 40px;
+    padding: 0;
     align-items: center;
     background-repeat: no-repeat; 
     background-size: cover;
-    padding: 0;
-    margin-bottom: 40px;
 }
 
 .fortune--cookie--text--container{
-    
-  margin: 0px 0px 10px 7px;
-  width: 96%;
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: center;
-  background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
-  background-repeat: round; 
-  background-size: cover;
+    width: 96%;
+    margin: 0px 0px 10px 7px;
+    padding: 10px;
+    text-align: center;
+    background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
+    background-repeat: round; 
+    background-size: cover;
+    border: 1px solid #000;
 }
 
 /* Random Cookie */
 
 .fortune{
+    width: 96%;
     height: 110px;
     min-height: 50px;
-    background: lightblue;
-    font-size: 13px;
-    width: 96%;
-      margin: 0px 0px 10px 7px;
+    margin: 0px 0px 10px 7px;
     padding: 20px;
+    background: lightblue;
     background-image:url('../images/BackgroundSrc/fortune_cookie_text_container.png');
     background-repeat: round; 
     background-size: cover;
-    
+    font-size: 13px; 
 }
 
 .button--container--todays--fortune{
@@ -409,43 +354,37 @@ nav{
 }
 
 #todays--fortune--button{
-    
-    height: 40px;
     width: 140px;
-    border-radius: 8px;
-    border: none;
+    height: 40px;
     font-size: 13px;
     cursor: pointer;
- 
-    
+    border-radius: 8px;
+    border: none;   
 }
 
 #todays--fortune--button:hover {
-        background-color: #445b65;
-        color: white;
+    background-color: #445b65;
+    color: white;
   }
-
 
 /* Footer */
 
-
 .footer-contact-info{
-    background-color: #D7D7D7;
     width: 110%;
     height: auto;
     margin: 0;
-    padding: 1.2em;
-    text-align: left;
-    position: relative;
-    z-index: 1;
     margin-top: 50px;
     margin-left: -15px;
-    color: #362f2d;
+    padding: 1.2em;
     align-items: center;
+    background-color: #D7D7D7;
+    color: #362f2d;
     font-size: 13px;
     display: flex;
     flex-direction: row;
-    
+    text-align: left;
+    position: relative;
+    z-index: 1;  
 }
 
 #footer--unorder--list--useful--links{

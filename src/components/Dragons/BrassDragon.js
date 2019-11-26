@@ -59,7 +59,7 @@ class DragonGems {
     
 class BrassDragon extends Component {
     
- /* 
+/* 
     * Here the classes being implemented and given
     * a default state with an empty array property.
 */
@@ -75,7 +75,7 @@ class BrassDragon extends Component {
      
  }  
     
- /* 
+/* 
     * All the fetches from the database are made here.
     * Using 5 different fetch files.
     * Updating the state of the classes with the data fetched.
@@ -101,6 +101,16 @@ class BrassDragon extends Component {
 	      });
   }
  
+  fetchMagic = () => {
+	    fetch("http://localhost/dragonology/server/fetchMagicBrass.php")
+	      .then(response => response.json())
+	      .then(data => {
+            console.log(data);
+	        this.setState({ DragonMagic: data });
+	        
+	      });
+  }
+ 
  fetchOneGem = () => {
 	    fetch("http://localhost/dragonology/server/fetchGemBrass.php")
 	      .then(response => response.json())
@@ -110,25 +120,14 @@ class BrassDragon extends Component {
 	        
 	      });
   }
-  
- fetchMagic = () => {
-	    fetch("http://localhost/dragonology/server/fetchMagicBrass.php")
-	      .then(response => response.json())
-	      .then(data => {
-            console.log(data);
-	        this.setState({ DragonMagic: data });
-	        
-	      });
-  }
     
  
-	  
-
 /*
     * It will trigger an extra rendering, but it will
     * happen before the browser updates the screen.
 */ 
 
+ 
   componentDidMount() {
       this.fetchOneDragon();
       this.fetchOneSkill();
@@ -137,7 +136,6 @@ class BrassDragon extends Component {
     
   }   
      
-
 
 render () {
     
@@ -279,6 +277,3 @@ render () {
 }
 
 export default BrassDragon;
-
-
-

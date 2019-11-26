@@ -1,3 +1,17 @@
+The brower versions tested of which are working to open the app with and looks good on in the devices Mobile, Tablet and Desktop:
+
+•	google chrome Version 78.0.3904.97 Windows 10 (Official version) (64 bit)
+
+•	Fire fox Quantum Version 69.0.3 Windows 10 (Official version) (64 bit)
+
+
+•	Opera Version 65.0.3467.48 Windows 10 (Official version) (64 bit)
+
+The browser version, which don’t show or open up the app:
+
+•	Internet Explorer 11 Version 11.476.xxx Windows 10.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
